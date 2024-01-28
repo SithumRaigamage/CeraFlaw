@@ -1,16 +1,13 @@
 # ceraflaw
 
-A new Flutter project.
+if any error occurs in the files 
 
-## Getting Started
+run these in your terminal 
 
-This project is a starting point for a Flutter application.
+## Each operating system may have its preferred line ending convention.
+## Allow Git to automatically convert line endings by configuring the core.autocrlf setting in your Git configuration
+## This setting tells Git to convert LF endings to CRLF when checking out files and convert CRLF endings to LF when committing files.
+git config --global core.autocrlf true 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Add desktop support
+flutter create --platforms=windows,macos,linux .
