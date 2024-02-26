@@ -1,15 +1,18 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:flutter/material.dart';
+void main() {
+  runApp(StartScreen());
+}
 
 class StartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Flutter Grid and Flow Layout',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Select Tile Size and Enter Batch ID'),
+          title: Text('Grid and Flow Layout'),
         ),
         body: GridAndFlowLayout(),
       ),
@@ -24,6 +27,36 @@ class GridAndFlowLayout extends StatefulWidget {
 
 class _GridAndFlowLayoutState extends State<GridAndFlowLayout> {
   String batchId = '';
+
+  void _handleSubmit(BuildContext context) {
+    // Validate if the batchId contains only letters and numbers
+    bool isValid = RegExp(r'^[a-zA-Z0-9]+$').hasMatch(batchId);
+
+    if (isValid) {
+      // Navigate to the new screen if input is valid
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => SubmitScreen(batchId: batchId),
+        ),
+      );
+    } else {
+      // Show an alert if input is invalid
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: Text('Invalid Input'),
+          content: Text('Please enter only letters and numbers for Batch ID.'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: Text('OK'),
+            ),
+          ],
+        ),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -74,8 +107,7 @@ class _GridAndFlowLayoutState extends State<GridAndFlowLayout> {
               SizedBox(width: 10),
               ElevatedButton(
                 onPressed: () {
-                  // Handle submit button press
-                  print('Submitted Batch ID: $batchId');
+                  _handleSubmit(context);
                 },
                 child: Text('Submit'),
               ),
@@ -83,6 +115,24 @@ class _GridAndFlowLayoutState extends State<GridAndFlowLayout> {
           ),
         ),
       ],
+    );
+  }
+}
+
+class SubmitScreen extends StatelessWidget {
+  final String batchId;
+
+  SubmitScreen({required this.batchId});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Submit Screen'),
+      ),
+      body: Center(
+        child: Text('Submitted Batch ID: $batchId'),
+      ),
     );
   }
 }

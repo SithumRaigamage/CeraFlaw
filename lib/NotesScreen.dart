@@ -1,149 +1,157 @@
+import 'dart:convert';
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:path_provider/path_provider.dart';
 
-class NotesScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: NotesApp(),
-      theme: ThemeData(
-        scaffoldBackgroundColor: Color(0xFF1B1B1E),
-        textTheme: TextTheme(
-          bodyText1: TextStyle(color: Color(0xFFF3F3F4), fontSize: 16.0),
-          headline1: TextStyle(
-            color: Color(0xFFF3F3F4),
-            fontSize: 32.0,
-            fontWeight: FontWeight.bold,
-          ),
-          button: TextStyle(
-            color: Color(0xFF1B1B1E),
-            backgroundColor: Color(0xFFF3F3F4),
-          ),
-        ),
-      ),
-    );
-  }
+
+class Note {
+  late String title;
+  late String message;
+  late DateTime timestamp;
+
+  Note({
+    required this.title,
+    required this.message,
+    required this.timestamp,
+  });
 }
 
-class NotesApp extends StatefulWidget {
+class NotesScreen extends StatefulWidget {
   @override
-  _NotesAppState createState() => _NotesAppState();
+  _NotesPageState createState() => _NotesPageState();
 }
 
-class _NotesAppState extends State<NotesApp> {
-  List<Map<String, String>> notes = [];
+class _NotesPageState extends State<NotesScreen> {
+  late List<Note> notes = [];
+  late TextEditingController _titleController;
+  late TextEditingController _messageController;
 
-  void _addNote() {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        TextEditingController titleController = TextEditingController();
-        TextEditingController messageController = TextEditingController();
-
-        return AlertDialog(
-          title: Text("Add Note"),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              TextField(
-                controller: titleController,
-                decoration: InputDecoration(labelText: 'Title'),
-              ),
-              TextField(
-                controller: messageController,
-                decoration: InputDecoration(labelText: 'Message'),
-              ),
-            ],
-          ),
-          actions: [
-            ElevatedButton(
-              onPressed: () {
-                setState(() {
-                  notes.add({
-                    'title': titleController.text,
-                    'message': messageController.text,
-                  });
-                });
-                Navigator.pop(context);
-              },
-              child: Text("Add"),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              child: Text("Cancel"),
-            ),
-          ],
-        );
-      },
-    );
+  @override
+  void initState() {
+    super.initState();
+    _titleController = TextEditingController();
+    _messageController = TextEditingController();
+    _loadNotes();
   }
 
-  void _deleteNote(int index) {
-    setState(() {
-      notes.removeAt(index);
-    });
+  Future<void> _loadNotes() async {
+    try {
+      final file = await _localFile;
+      String contents = await file.readAsString();
+      List<dynamic> jsonData = jsonDecode(contents);
+      setState(() {
+        notes = jsonData.map((noteJson) => Note(
+              title: noteJson['title'],
+              message: noteJson['message'],
+              timestamp: DateTime.parse(noteJson['timestamp']),
+            )).toList();
+      });
+    } catch (e) {
+      print('Error loading notes: $e');
+    }
+  }
+
+  Future<void> _saveNotes() async {
+    try {
+      final file = await _localFile;
+      List<Map<String, dynamic>> jsonData = notes
+          .map((note) => {
+                'title': note.title,
+                'message': note.message,
+                'timestamp': note.timestamp.toIso8601String(),
+              })
+          .toList();
+      await file.writeAsString(jsonEncode(jsonData));
+    } catch (e) {
+      print('Error saving notes: $e');
+    }
+  }
+
+  Future<File> get _localFile async {
+    final directory = await getApplicationDocumentsDirectory();
+    return File('${directory.path}/notes.json');
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Notes"),
+        title: Text('Notes'),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _addNote,
-        child: Icon(Icons.add),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            crossAxisSpacing: 8.0,
-            mainAxisSpacing: 8.0,
-          ),
-          itemCount: notes.length,
-          itemBuilder: (context, index) {
-            return Card(
-              color: Colors.white,
-              child: InkWell(
-                onTap: () {},
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        notes[index]['title'] ?? '',
-                        style: Theme.of(context).textTheme.headline1,
-                      ),
-                      SizedBox(height: 8.0),
-                      Text(
-                        notes[index]['message'] ?? '',
-                        maxLines: 3,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      SizedBox(height: 8.0),
-                      Text(
-                        'Timestamp', // Replace with actual timestamp
-                        style: TextStyle(color: Color(0xFF7E7F83)),
-                      ),
-                      Align(
-                        alignment: Alignment.bottomRight,
-                        child: IconButton(
-                          icon: Icon(Icons.delete),
-                          onPressed: () => _deleteNote(index),
-                        ),
-                      ),
-                    ],
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    controller: _titleController,
+                    decoration: InputDecoration(
+                      labelText: 'Title',
+                    ),
                   ),
                 ),
-              ),
-            );
-          },
-        ),
+                SizedBox(width: 8),
+                Expanded(
+                  child: TextField(
+                    controller: _messageController,
+                    decoration: InputDecoration(
+                      labelText: 'Message',
+                    ),
+                  ),
+                ),
+                SizedBox(width: 8),
+                ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      final newNote = Note(
+                        title: _titleController.text,
+                        message: _messageController.text,
+                        timestamp: DateTime.now(),
+                      );
+                      notes.add(newNote);
+                      _saveNotes();
+                      _titleController.clear();
+                      _messageController.clear();
+                    });
+                  },
+                  child: Text('Add'),
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemCount: notes.length,
+              itemBuilder: (context, index) {
+                final note = notes[index];
+                return ListTile(
+                  title: Text(note.title),
+                  subtitle: Text(note.message),
+                  trailing: IconButton(
+                    icon: Icon(Icons.delete),
+                    onPressed: () {
+                      setState(() {
+                        notes.removeAt(index);
+                        _saveNotes();
+                      });
+                    },
+                  ),
+                );
+              },
+            ),
+          ),
+        ],
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    _titleController.dispose();
+    _messageController.dispose();
+    super.dispose();
   }
 }
