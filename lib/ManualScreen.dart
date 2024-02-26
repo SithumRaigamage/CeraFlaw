@@ -1,31 +1,13 @@
-
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
+import 'dart:io';
 
-
-
-class ManualScreen extends StatelessWidget {
+class ManualScreen extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Paragraph Sentences',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: ParagraphSentencesScreen(),
-    );
-  }
+  _ManualScreenState createState() => _ManualScreenState();
 }
 
-class ParagraphSentencesScreen extends StatefulWidget {
-  @override
-  _ParagraphSentencesScreenState createState() =>
-      _ParagraphSentencesScreenState();
-}
-
-class _ParagraphSentencesScreenState extends State<ParagraphSentencesScreen> {
+class _ManualScreenState extends State<ManualScreen> {
   final TextEditingController _textEditingController = TextEditingController();
   String _paragraph = '';
 
@@ -61,42 +43,55 @@ class _ParagraphSentencesScreenState extends State<ParagraphSentencesScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Paragraph Sentences'),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.save),
-            onPressed: _updateParagraph,
+    return WillPopScope(
+      onWillPop: () async {
+        // Handle back button press event
+        Navigator.pop(context);
+        return true; // Return true to allow back navigation
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text('Paragraph Sentences'),
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context); // Navigate back to the previous screen
+            },
           ),
-        ],
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Expanded(
-              child: SingleChildScrollView(
-                child: Text(
-                  _paragraph,
-                  style: TextStyle(fontSize: 16.0),
-                ),
-              ),
-            ),
-            SizedBox(height: 10),
-            TextField(
-              controller: _textEditingController,
-              decoration: InputDecoration(
-                labelText: 'Enter a sentence',
-                border: OutlineInputBorder(),
-              ),
-              maxLines: 3,
-              onChanged: (text) {
-                _updateParagraph();
-              },
+          actions: [
+            IconButton(
+              icon: Icon(Icons.save),
+              onPressed: _updateParagraph,
             ),
           ],
+        ),
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Text(
+                    _paragraph,
+                    style: TextStyle(fontSize: 16.0),
+                  ),
+                ),
+              ),
+              SizedBox(height: 10),
+              TextField(
+                controller: _textEditingController,
+                decoration: InputDecoration(
+                  labelText: 'Enter a sentence',
+                  border: OutlineInputBorder(),
+                ),
+                maxLines: 3,
+                onChanged: (text) {
+                  _updateParagraph();
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );
