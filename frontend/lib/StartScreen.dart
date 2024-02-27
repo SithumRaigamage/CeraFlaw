@@ -11,11 +11,23 @@ class StartScreen extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Grid and Flow Layout',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Grid and Flow Layout'),
+      home: WillPopScope(
+        onWillPop: () async {
+          // Handle back button press here
+          return true; // return true to allow back navigation
+        },
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text('Grid and Flow Layout'),
+            leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () {
+                Navigator.pop(context); // Navigate back to the previous screen
+              },
+            ),
+          ),
+          body: GridAndFlowLayout(),
         ),
-        body: GridAndFlowLayout(),
       ),
     );
   }
@@ -27,35 +39,43 @@ class GridAndFlowLayout extends StatefulWidget {
 }
 
 class _GridAndFlowLayoutState extends State<GridAndFlowLayout> {
-  String batchId = '';
+  late String batchIdController;
+  List<double> tileSizes = List.generate(9, (index) => 100.0); // List to hold preferred tile sizes for each button
+
+  @override
+  void initState() {
+    super.initState();
+    batchIdController = '';
+  }
 
   void _handleSubmit(BuildContext context) {
-    // Validate if the batchId contains only letters and numbers
-    bool isValid = RegExp(r'^[a-zA-Z0-9]+$').hasMatch(batchId);
+    if (batchIdController.isNotEmpty) {
+      bool isValid = RegExp(r'^[a-zA-Z0-9]+$').hasMatch(batchIdController);
 
-    if (isValid) {
-      // Navigate to the new screen if input is valid
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => SubmitScreen(batchId: batchId),
-        ),
-      );
+      if (isValid) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => SubmitScreen(batchId: batchIdController),
+          ),
+        );
+      } else {
+        showDialog(
+          context: context,
+          builder: (context) => AlertDialog(
+            title: Text('Invalid Input'),
+            content: Text('Please enter only letters and numbers for Batch ID.'),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: Text('OK'),
+              ),
+            ],
+          ),
+        );
+      }
     } else {
-      // Show an alert if input is invalid
-      showDialog(
-        context: context,
-        builder: (context) => AlertDialog(
-          title: Text('Invalid Input'),
-          content: Text('Please enter only letters and numbers for Batch ID.'),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: Text('OK'),
-            ),
-          ],
-        ),
-      );
+      Navigator.pop(context); // Allow back navigation if no batch ID is entered
     }
   }
 
@@ -68,21 +88,15 @@ class _GridAndFlowLayoutState extends State<GridAndFlowLayout> {
             crossAxisCount: 3,
             children: List.generate(9, (index) {
               return GridTile(
-                child: Column(
-                  children: [
-                    Expanded(
-                      child: ElevatedButton.icon(
-                        onPressed: () {
-                          // Handle button press
-                        },
-                        icon: Image.asset(
-                          'assets/image.png',
-                          fit: BoxFit.cover,
-                        ),
-                        label: Text('Button $index'),
-                      ),
-                    ),
-                  ],
+                child: SizedBox(
+                  width: tileSizes[index],
+                  height: tileSizes[index],
+                  child: ElevatedButton(
+                    onPressed: () {
+                      // Handle button press
+                    },
+                    child: Text('Button $index'), // Text can be customized here
+                  ),
                 ),
               );
             }),
@@ -100,7 +114,7 @@ class _GridAndFlowLayoutState extends State<GridAndFlowLayout> {
                   ),
                   onChanged: (value) {
                     setState(() {
-                      batchId = value;
+                      batchIdController = value;
                     });
                   },
                 ),
