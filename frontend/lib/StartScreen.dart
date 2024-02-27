@@ -10,6 +10,7 @@ class StartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Grid and Flow Layout',
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text('Grid and Flow Layout'),
