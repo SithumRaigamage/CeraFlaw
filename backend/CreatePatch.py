@@ -2,7 +2,7 @@ import numpy as np
 from PIL import Image
 import os
 
-folder_path = "NoBgTileFrames"
+folder_path = "backend//NoBgTileFrames"
 
 # Getting a list of all files in the folder
 file_list = os.listdir(folder_path)
@@ -26,7 +26,7 @@ for image_file in image_files:
     piece_width = image_array.shape[1] // num_pieces[1]
 
     #saving all the pieces 
-    save_dir = "Patches"
+    save_dir = "backend//Patches"
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
 
