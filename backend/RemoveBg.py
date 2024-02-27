@@ -2,8 +2,8 @@ from rembg import remove
 from PIL import Image
 import os
 
-folder_path = "original_tile_frames"
-output_folder = "noBG_tile_frames"
+folder_path = "TileFrames"
+output_folder = "NoBgTileFrames"
 
 # Get a list of all files in the folder
 file_list = os.listdir(folder_path)

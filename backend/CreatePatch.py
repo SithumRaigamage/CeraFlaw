@@ -2,7 +2,7 @@ import numpy as np
 from PIL import Image
 import os
 
-folder_path = "noBG_tile_frames"
+folder_path = "NoBgTileFrames"
 
 # Getting a list of all files in the folder
 file_list = os.listdir(folder_path)
@@ -26,7 +26,7 @@ for image_file in image_files:
     piece_width = image_array.shape[1] // num_pieces[1]
 
     #saving all the pieces 
-    save_dir = "pieces"
+    save_dir = "Patches"
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
 
@@ -40,7 +40,7 @@ for image_file in image_files:
             piece_image = Image.fromarray(piece.astype(np.uint8))
 
             #Saving with a unique name based on piece index
-            save_path = os.path.join(save_dir, f"{os.path.splitext(image_file)[0]}_piece_{piece_count}.jpg")
+            save_path = os.path.join(save_dir, f"{os.path.splitext(image_file)[0]}_patch_{piece_count}.jpg")
             piece_image.save(save_path)
 
             piece_count += 1
