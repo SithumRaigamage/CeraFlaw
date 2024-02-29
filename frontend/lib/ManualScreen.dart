@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 import 'dart:io';
@@ -8,91 +9,122 @@ class ManualScreen extends StatefulWidget {
 }
 
 class _ManualScreenState extends State<ManualScreen> {
-  final TextEditingController _textEditingController = TextEditingController();
-  String _paragraph = '';
+  final TextEditingController _notesEditingController = TextEditingController();
+  String _notes = '';
 
   @override
   void initState() {
     super.initState();
-    _loadParagraph();
+    _loadNotes();
   }
 
-  void _loadParagraph() async {
+  void _loadNotes() async {
     try {
       final directory = await getApplicationDocumentsDirectory();
-      final file = File('${directory.path}/paragraph.txt');
+      final file = File('${directory.path}/notes.txt');
       if (await file.exists()) {
         setState(() {
-          _paragraph = file.readAsStringSync();
+          _notes = file.readAsStringSync();
         });
       }
     } catch (e) {
-      print("Failed to load paragraph: $e");
+      print("Failed to load notes: $e");
     }
   }
 
-  void _updateParagraph() async {
+  Future<void> _updateNotes() async {
     setState(() {
-      _paragraph = _textEditingController.text;
+      _notes += '\n' + _notesEditingController.text;
+      _notesEditingController.clear(); // Clear the input field after appending
     });
 
     final directory = await getApplicationDocumentsDirectory();
-    final file = File('${directory.path}/paragraph.txt');
-    await file.writeAsString(_paragraph);
+    final file = File('${directory.path}/notes.txt');
+    await file.writeAsString(_notes, mode: FileMode.append);
+  }
+
+  void _deleteNotes() {
+    setState(() {
+      _notes = '';
+      _notesEditingController.clear();
+    });
+  }
+
+  void _deleteFile() async {
+    try {
+      final directory = await getApplicationDocumentsDirectory();
+      final file = File('${directory.path}/notes.txt');
+      if (await file.exists()) {
+        await file.delete();
+        setState(() {
+          _notes = ''; // Clear the notes field after deleting the file
+        });
+      }
+    } catch (e) {
+      print("Failed to delete file: $e");
+    }
   }
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async {
-        // Handle back button press event
-        Navigator.pop(context);
-        return true; // Return true to allow back navigation
-      },
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text('Paragraph Sentences'),
-          leading: IconButton(
-            icon: Icon(Icons.arrow_back),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Notes'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.delete),
             onPressed: () {
-              Navigator.pop(context); // Navigate back to the previous screen
+              _deleteNotes();
+              _deleteFile(); // Call the function to delete the file
             },
           ),
-          actions: [
-            IconButton(
-              icon: Icon(Icons.save),
-              onPressed: _updateParagraph,
+        ],
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Text(
+                      'Notes:',
+                      style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(height: 5),
+                    Text(
+                      _notes,
+                      style: TextStyle(fontSize: 16.0),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(height: 10),
+            TextField(
+              controller: _notesEditingController,
+              decoration: InputDecoration(
+                labelText: 'Enter notes',
+                border: OutlineInputBorder(),
+              ),
+              maxLines: 5,
             ),
           ],
         ),
-        body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Expanded(
-                child: SingleChildScrollView(
-                  child: Text(
-                    _paragraph,
-                    style: TextStyle(fontSize: 16.0),
-                  ),
-                ),
-              ),
-              SizedBox(height: 10),
-              TextField(
-                controller: _textEditingController,
-                decoration: InputDecoration(
-                  labelText: 'Enter a sentence',
-                  border: OutlineInputBorder(),
-                ),
-                maxLines: 3,
-                onChanged: (text) {
-                  _updateParagraph();
-                },
-              ),
-            ],
-          ),
-        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _updateNotes, // Call _updateNotes when the button is pressed
+        tooltip: 'Save',
+        child: Icon(Icons.save),
       ),
     );
   }

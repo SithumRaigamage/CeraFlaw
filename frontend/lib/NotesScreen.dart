@@ -69,9 +69,12 @@ class _NotesPageState extends State<NotesScreen> {
   }
 
   Future<File> get _localFile async {
-    final directory = await getApplicationDocumentsDirectory();
-    return File('${directory.path}/notes.json');
-  }
+  Directory currentDirectory = Directory.current;
+  String filePath = '${currentDirectory.path}/notes.json';
+  print('File path: $filePath');
+  return File(filePath);
+}
+
 
   @override
   Widget build(BuildContext context) {
