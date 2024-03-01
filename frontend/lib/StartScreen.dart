@@ -1,4 +1,5 @@
 
+import 'package:ceraflaw/detectionScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -56,7 +57,7 @@ class _GridAndFlowLayoutState extends State<GridAndFlowLayout> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => SubmitScreen(batchId: batchIdController),
+            builder: (context) => DetectionScreen(batchId: batchIdController),
           ),
         );
       } else {
@@ -134,20 +135,3 @@ class _GridAndFlowLayoutState extends State<GridAndFlowLayout> {
   }
 }
 
-class SubmitScreen extends StatelessWidget {
-  final String batchId;
-
-  SubmitScreen({required this.batchId});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Submit Screen'),
-      ),
-      body: Center(
-        child: Text('Submitted Batch ID: $batchId'),
-      ),
-    );
-  }
-}
