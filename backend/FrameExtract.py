@@ -42,3 +42,7 @@ while True:
     # Manual Exit Option
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
+    
+# end
+vidCam.release()
+cv2.destroyAllWindows()
