@@ -76,7 +76,19 @@ class _GridAndFlowLayoutState extends State<GridAndFlowLayout> {
         );
       }
     } else {
-      Navigator.pop(context); // Allow back navigation if no batch ID is entered
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: Text('Empty Batch ID'),
+          content: Text('Please enter a Batch ID before submitting.'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: Text('OK'),
+            ),
+          ],
+        ),
+      );
     }
   }
 
@@ -134,4 +146,3 @@ class _GridAndFlowLayoutState extends State<GridAndFlowLayout> {
     );
   }
 }
-
