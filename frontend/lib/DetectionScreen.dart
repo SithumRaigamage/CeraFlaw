@@ -14,8 +14,8 @@ class DetectionScreen extends StatelessWidget {
       body: Stack(
         children: [
           Positioned(
-            top: 0,
-            left: 0,
+            top: 100,
+            left: 20,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
@@ -29,5 +29,3 @@ class DetectionScreen extends StatelessWidget {
     );
   }
 }
-
-
