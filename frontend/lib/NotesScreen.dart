@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 
-
 class Note {
   late String title;
   late String message;
@@ -41,10 +40,10 @@ class _NotesPageState extends State<NotesScreen> {
       List<dynamic> jsonData = jsonDecode(contents);
       setState(() {
         notes = jsonData.map((noteJson) => Note(
-              title: noteJson['title'],
-              message: noteJson['message'],
-              timestamp: DateTime.parse(noteJson['timestamp']),
-            )).toList();
+          title: noteJson['title'],
+          message: noteJson['message'],
+          timestamp: DateTime.parse(noteJson['timestamp']),
+        )).toList();
       });
     } catch (e) {
       print('Error loading notes: $e');
@@ -56,10 +55,10 @@ class _NotesPageState extends State<NotesScreen> {
       final file = await _localFile;
       List<Map<String, dynamic>> jsonData = notes
           .map((note) => {
-                'title': note.title,
-                'message': note.message,
-                'timestamp': note.timestamp.toIso8601String(),
-              })
+        'title': note.title,
+        'message': note.message,
+        'timestamp': note.timestamp.toIso8601String(),
+      })
           .toList();
       await file.writeAsString(jsonEncode(jsonData));
     } catch (e) {
@@ -68,11 +67,11 @@ class _NotesPageState extends State<NotesScreen> {
   }
 
   Future<File> get _localFile async {
-  Directory currentDirectory = Directory.current;
-  String filePath = '${currentDirectory.path}/notes.json';
-  print('File path: $filePath');
-  return File(filePath);
-}
+    final directory = await getApplicationDocumentsDirectory();
+    String filePath = '${directory.path}/notes.json';
+    print('File path: $filePath');
+    return File(filePath);
+  }
 
 
   @override
