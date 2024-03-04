@@ -15,6 +15,13 @@ class StartScreen extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Grid and Flow Layout'),
+          // Adding an arrow button for navigation back to the previous screen
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -92,34 +99,33 @@ class _BatchIdFormState extends State<BatchIdForm> {
   String get batchId => _batchIdController.text.trim();
 
   void _handleSubmit(BuildContext context) {
-  String batchId = _batchIdController.text.trim();
+    String batchId = _batchIdController.text.trim();
 
-  if (batchId.isNotEmpty) {
-    // Navigate to DetectionScreen only if batch ID is not empty
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => DetectionScreen(batchId: batchId),
-      ),
-    );
-  } else {
-    // Show popup panel if batchId field is empty
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: Text('Empty Batch ID'),
-        content: Text('Please enter characters with numbers for Batch ID.'),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: Text('OK'),
-          ),
-        ],
-      ),
-    );
+    if (batchId.isNotEmpty) {
+      // Navigate to DetectionScreen only if batch ID is not empty
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => DetectionScreen(batchId: batchId),
+        ),
+      );
+    } else {
+      // Show popup panel if batchId field is empty
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: Text('Empty Batch ID'),
+          content: Text('Please enter characters with numbers for Batch ID.'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: Text('OK'),
+            ),
+          ],
+        ),
+      );
+    }
   }
-}
-
 
   @override
   Widget build(BuildContext context) {
