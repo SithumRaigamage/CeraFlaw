@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class DetectionScreen extends StatelessWidget {
-  // Adjust constructor parameters if needed
   final String batchId;
 
   DetectionScreen({required this.batchId});
@@ -10,11 +9,25 @@ class DetectionScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('New Screen'), // Change the title if needed
+        title: Text('New Screen'),
       ),
-      body: Center(
-        child: Text('Submitted Batch ID: $batchId'),
+      body: Stack(
+        children: [
+          Positioned(
+            top: 0,
+            left: 0,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                'Submitted Batch ID: $batchId\n2 by 2 ceramic tile was selected',
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
 }
+
+
