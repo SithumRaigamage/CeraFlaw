@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 
-class SettingsScreen extends StatelessWidget {
+class SettingsScreen extends StatefulWidget {
+  @override
+  _SettingsScreenState createState() => _SettingsScreenState();
+}
+
+class _SettingsScreenState extends State<SettingsScreen> {
+  String _selectedLanguage = 'English';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,12 +38,32 @@ class SettingsScreen extends StatelessWidget {
               transform: Matrix4.rotationZ(-0.785398),
               color: Colors.red, // Choose your banner color
               child: Text(
-                'In Development',
+                _selectedLanguage == 'English' ? 'In Development' : 'ක්‍රියාකාරී තැන්',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),
+            ),
+          ),
+          // Language Selector
+          Positioned(
+            top: 20,
+            right: 20,
+            child: DropdownButton<String>(
+              value: _selectedLanguage,
+              onChanged: (newValue) {
+                setState(() {
+                  _selectedLanguage = newValue!;
+                });
+              },
+              items: <String>['English', 'Sinhala']
+                  .map<DropdownMenuItem<String>>((String value) {
+                return DropdownMenuItem<String>(
+                  value: value,
+                  child: Text(value),
+                );
+              }).toList(),
             ),
           ),
         ],
