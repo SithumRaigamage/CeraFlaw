@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 import 'dart:io';
+import 'package:path/path.dart' as path;
 
 class ManualScreen extends StatefulWidget {
   @override
@@ -21,7 +22,8 @@ class _ManualScreenState extends State<ManualScreen> {
   void _loadNotes() async {
     try {
       final directory = await getApplicationDocumentsDirectory();
-      final file = File('${directory.path}/notes.txt');
+      final filePath = path.join(directory.path, 'notes.txt');
+      final file = File(filePath);
       if (await file.exists()) {
         setState(() {
           _notes = file.readAsStringSync();
@@ -38,9 +40,14 @@ class _ManualScreenState extends State<ManualScreen> {
       _notesEditingController.clear(); // Clear the input field after appending
     });
 
-    final directory = await getApplicationDocumentsDirectory();
-    final file = File('${directory.path}/notes.txt');
-    await file.writeAsString(_notes, mode: FileMode.append);
+    try {
+      final directory = await getApplicationDocumentsDirectory();
+      final filePath = path.join(directory.path, 'notes.txt');
+      final file = File(filePath);
+      await file.writeAsString(_notes, mode: FileMode.append);
+    } catch (e) {
+      print("Failed to update notes: $e");
+    }
   }
 
   void _deleteNotes() {
@@ -53,7 +60,8 @@ class _ManualScreenState extends State<ManualScreen> {
   void _deleteFile() async {
     try {
       final directory = await getApplicationDocumentsDirectory();
-      final file = File('${directory.path}/notes.txt');
+      final filePath = path.join(directory.path, 'notes.txt');
+      final file = File(filePath);
       if (await file.exists()) {
         await file.delete();
         setState(() {
