@@ -25,6 +25,7 @@ class DetectionScreen extends StatelessWidget {
             ),
           ),
           Container(
+            margin: EdgeInsets.fromLTRB(0, 60, 0, 0),
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage("assets/ceraflaw_wallpaper.jpg"),
