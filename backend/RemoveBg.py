@@ -2,30 +2,22 @@ from rembg import remove
 from PIL import Image
 import os
 
-folder_path = "backend//TileFrames"
-output_folder = "backend//NoBgTileFrames"
+# Set the input and output folders
+input_folder = 'input_images'
+output_folder = 'output_images'
 
-# Get a list of all files in the folder
-file_list = os.listdir(folder_path)
+# loop through all files in input folder
+for filename in os.listdir(input_folder):
+    if filename.endswith('.JPG') or filename.endswith('.png'):
+        # define input and output file paths
+        input_path = os.path.join(input_folder, filename)
+        output_path = os.path.join(output_folder, filename.split('.')[0] + '.png')
 
-# Filter only image files (you can customize the extension as needed)
-image_files = [file for file in file_list if file.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp'))]
+        # load the input image
+        input_image = Image.open(input_path)
 
-for image_file in image_files:
-    # Construct the full path to the image file
-    image_path = os.path.join(folder_path, image_file)
+        # remove the background
+        output_image = remove(input_image)
 
-    img = Image.open(image_path)
-    #using remove method
-    output_image = remove(img)    
-
-    # Construct the output path for the processed image
-    output_path = os.path.join(output_folder, image_file.lower())  
-
-    # Convert the image to 'RGB' mode before saving as JPEG
-    output_image = output_image.convert('RGB')
-
-    # Save the processed image to the output folder
-    output_image.save(output_path)
-
-    img.close()
+        # save the output into PNG
+        output_image.save(output_path)
