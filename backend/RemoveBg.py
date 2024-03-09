@@ -3,8 +3,8 @@ from PIL import Image
 import os
 
 # Set the input and output folders
-input_folder = 'input_images'
-output_folder = 'output_images'
+input_folder = 'backend\input_images'
+output_folder = 'backend\output_images'
 
 # loop through all files in input folder
 for filename in os.listdir(input_folder):
