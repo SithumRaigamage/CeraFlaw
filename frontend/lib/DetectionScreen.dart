@@ -15,12 +15,13 @@ class DetectionScreen extends StatelessWidget {
         children: [
           Positioned(
             top: 0, // Adjusted to position at the top
-            left: 0, // Adjusted to position at the left
+            left: 20, // Adjusted to position at the left
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 'Submitted Batch ID: $batchId\n2 by 2 ceramic tile was selected',
-                textAlign: TextAlign.left,
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 15, fontWeight: FontWeight.w300),
               ),
             ),
           ),
@@ -35,12 +36,12 @@ class DetectionScreen extends StatelessWidget {
             ),
             child: Center(
               child: Container(
-                padding: EdgeInsets.all(10.0),
+                padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                 child: GridView.count(
                   crossAxisCount: 2,
                   crossAxisSpacing: 10.0,
                   mainAxisSpacing: 10.0,
-                  childAspectRatio: 1.5, // Adjust aspect ratio as needed
+                  childAspectRatio: 2.6, // Adjust aspect ratio as needed
                   children: <Widget>[
                     // div1: Image only
                     Container(
@@ -126,15 +127,15 @@ class DetectionScreen extends StatelessWidget {
                         crossAxisCount: 3,
                         shrinkWrap: true,
                         physics: NeverScrollableScrollPhysics(),
-                        children: List.generate(
+                        /*children: List.generate(
                           6, // Total number of images
                           (index) => Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Image.asset("assets/image_$index.png",
-                                height: 200,
-                                width: 200), // Replace with your image paths
+                                height: 50,
+                                width: 50), // Replace with your image paths
                           ),
-                        ),
+                        ),*/
                       ),
                     ),
                   ],

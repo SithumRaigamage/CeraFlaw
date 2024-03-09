@@ -9,27 +9,27 @@ import 'NotesScreen.dart';
 
 // Defining a new widget for home page
 class HomeContent extends StatefulWidget {
- const HomeContent({Key? key});
+  const HomeContent({Key? key});
 
- //New instance of the state related to this widget
- @override
- _HomeContentState createState() => _HomeContentState();
+  //New instance of the state related to this widget
+  @override
+  _HomeContentState createState() => _HomeContentState();
 }
 
 // Defining the state for the HomeContent widget
 class _HomeContentState extends State<HomeContent> {
- late List<bool> _isHovered;
+  late List<bool> _isHovered;
 
- // Initializing the hover state for each column in the widget
- @override
- void initState() {
+  // Initializing the hover state for each column in the widget
+  @override
+  void initState() {
     super.initState();
     _isHovered = List<bool>.generate(6, (index) => false);
- }
+  }
 
- // UI of this widget
- @override
- Widget build(BuildContext context) {
+  // UI of this widget
+  @override
+  Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -48,7 +48,8 @@ class _HomeContentState extends State<HomeContent> {
             buildHoverEffectColumn(1, 'assets/icons/icon2.png', 'Manual', () {
               _navigateToScreen(context, ManualScreen());
             }),
-            buildHoverEffectColumn(2, 'assets/icons/icon3.png', 'Production History', () {
+            buildHoverEffectColumn(
+                2, 'assets/icons/icon3.png', 'Production History', () {
               _navigateToScreen(context, ProductionHistoryScreen());
             }),
             buildHoverEffectColumn(3, 'assets/icons/icon4.png', 'Settings', () {
@@ -64,10 +65,11 @@ class _HomeContentState extends State<HomeContent> {
         ),
       ],
     );
- }
+  }
 
- // handling the hover effect for a button
- Widget buildHoverEffectColumn(int index, String imagePath, String label, VoidCallback onTap) {
+  // handling the hover effect for a button
+  Widget buildHoverEffectColumn(
+      int index, String imagePath, String label, VoidCallback onTap) {
     return MouseRegion(
       onEnter: (event) {
         setState(() {
@@ -85,17 +87,19 @@ class _HomeContentState extends State<HomeContent> {
           duration: Duration(milliseconds: 200),
           padding: EdgeInsets.all(10),
           decoration: BoxDecoration(
-            border: Border.all(color: _isHovered[index] ? Colors.black : Colors.transparent, width: 4),   //border settings
+            border: Border.all(
+                color: _isHovered[index] ? Colors.black : Colors.transparent,
+                width: 4), //border settings
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(imagePath, width: 80, height: 80),    //icon image
+              Image.asset(imagePath, width: 80, height: 80), //icon image
               SizedBox(height: 10),
               Text(
-                label,    //icon label
+                label, //icon label
                 style: TextStyle(
-                 fontWeight: FontWeight.bold,   //icon label settings
+                  fontWeight: FontWeight.bold, //icon label settings
                 ),
               ),
             ],
@@ -103,13 +107,13 @@ class _HomeContentState extends State<HomeContent> {
         ),
       ),
     );
- }
+  }
 
- // Handling the navigation related to the button
- void _navigateToScreen(BuildContext context, Widget screen) {
+  // Handling the navigation related to the button
+  void _navigateToScreen(BuildContext context, Widget screen) {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => screen),
     );
- }
+  }
 }
