@@ -38,9 +38,13 @@ class _ManualScreenState extends State<ManualScreen> {
       _notesEditingController.clear(); // Clear the input field after appending
     });
 
-    final directory = await getApplicationDocumentsDirectory();
-    final file = File('${directory.path}/notes.txt');
-    await file.writeAsString(_notes, mode: FileMode.append);
+    try {
+      final directory = await getApplicationDocumentsDirectory();
+      final file = File('${directory.path}/notes.txt');
+      await file.writeAsString(_notes);
+    } catch (e) {
+      print("Failed to update notes: $e");
+    }
   }
 
   void _deleteNotes() {

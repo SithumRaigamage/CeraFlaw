@@ -1,30 +1,34 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:ceraflaw/main.dart';
+import 'package:ceraflaw/main.dart'; // Import the main.dart file
+import 'package:ceraflaw/HomeScreen.dart'; // Import HomeScreen.dart
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+  testWidgets('Test CeraFlaw Widget', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+    await tester.pumpWidget(CeraFlaw()); // Create an instance of CeraFlaw widget
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // Verify that MaterialApp, Scaffold, and HomeContent widgets are present.
+    expect(find.byType(MaterialApp), findsOneWidget);
+    expect(find.byType(Scaffold), findsOneWidget);
+    expect(find.byType(HomeContent), findsOneWidget); // Using HomeContent instead of HomeScreen
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+    // Verify that the background image is set.
+    expect(find.byType(Container), findsOneWidget);
+    expect(
+      find.descendant(
+        of: find.byType(Container),
+        matching: find.byType(DecorationImage),
+      ),
+      findsOneWidget,
+    );
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Verify the frame size
+    expect(find.byType(Container), findsOneWidget);
+    expect(
+      tester.getSize(find.byType(Container)),
+      Size(500, 500),
+    );
   });
 }
+
