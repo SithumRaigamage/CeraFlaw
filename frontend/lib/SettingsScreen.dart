@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:io';
 
 class SettingsScreen extends StatefulWidget {
   @override
@@ -24,29 +25,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 alignment: Alignment.topLeft,
               ),
             ),
-            child: Center(
-              child: Text('Content of Settings Screen'),
-            ),
           ),
-          // Diagonal Banner
-          Positioned(
-            top: MediaQuery.of(context).size.height * 0.3, // Adjust the height as needed
-            left: 0,
-            right: 0,
-            child: Container(
-              padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-              transform: Matrix4.rotationZ(-0.785398),
-              color: Colors.red, // Choose your banner color
-              child: Text(
-                _selectedLanguage == 'English' ? 'In Development' : 'ක්‍රියාකාරී තැන්',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
-          // Language Selector
+          //Select Language (Not Implemented)
           Positioned(
             top: 20,
             right: 20,
@@ -64,6 +44,47 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   child: Text(value),
                 );
               }).toList(),
+            ),
+          ),
+          //Delete Button
+          Positioned(
+            top: 100,
+            left: 20,
+            child: ElevatedButton(
+              onPressed: () {
+                //Data location
+                String framesDirectory = "../backend/Frames";
+
+                //if the location exsist
+                Directory(framesDirectory).exists().then((directoryExists) {
+                  if (directoryExists) {
+                    //clear data
+                    Directory(framesDirectory).listSync().forEach((entity) {
+                      if (entity is File) {
+                        entity.deleteSync();
+                      }
+                    });
+                    //successful
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text('Data Cleared')),
+                    );
+                  } else {
+                    //location not found
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text('Frames directory not found')),
+                    );
+                  }
+                });
+              },
+              //button text
+              child: Text(
+                'Clear Capture Data',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
           ),
         ],
