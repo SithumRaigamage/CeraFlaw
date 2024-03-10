@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'detectionScreen.dart';
-import 'tile.dart';
+//import 'tile.dart';
 /*
 void main() {
   runApp(StartScreen());
@@ -152,8 +152,6 @@ class _BatchIdFormState extends State<BatchIdForm> {
   }
 }
 */
-
-import 'package:flutter/material.dart';
 
 class StartScreen extends StatefulWidget {
   @override
