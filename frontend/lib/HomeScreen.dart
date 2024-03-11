@@ -42,23 +42,24 @@ class _HomeContentState extends State<HomeContent> {
           runSpacing: 10,
           children: [
             // buildHoverEffectColumn method for each column
-            buildHoverEffectColumn(0, 'assets/icons/icon1.png', 'Start', () {
+            buildHoverEffectColumn(0, 'assets/icons/play-button-black.png', 'Start',
+                () {
               _navigateToScreen(context, StartScreen());
             }),
-            buildHoverEffectColumn(1, 'assets/icons/icon2.png', 'Manual', () {
+            buildHoverEffectColumn(1, 'assets/icons/manual-black.png', 'Manual', () {
               _navigateToScreen(context, ManualScreen());
             }),
             buildHoverEffectColumn(
-                2, 'assets/icons/icon3.png', 'Production History', () {
+                2, 'assets/icons/time-black.png', 'Production History', () {
               _navigateToScreen(context, ProductionHistoryScreen());
             }),
-            buildHoverEffectColumn(3, 'assets/icons/icon4.png', 'Settings', () {
+            buildHoverEffectColumn(3, 'assets/icons/settings-black.png', 'Settings', () {
               _navigateToScreen(context, SettingsScreen());
             }),
-            buildHoverEffectColumn(4, 'assets/icons/icon5.png', 'Notes', () {
+            buildHoverEffectColumn(4, 'assets/icons/notes-black.png', 'Notes', () {
               _navigateToScreen(context, NotesScreen());
             }),
-            buildHoverEffectColumn(5, 'assets/icons/icon6.png', 'Quit', () {
+            buildHoverEffectColumn(5, 'assets/icons/logout-black.png', 'Quit', () {
               exit(0); //exit condition
             }),
           ],
