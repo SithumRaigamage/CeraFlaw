@@ -39,11 +39,13 @@ class _NotesPageState extends State<NotesScreen> {
       String contents = await file.readAsString();
       List<dynamic> jsonData = jsonDecode(contents);
       setState(() {
-        notes = jsonData.map((noteJson) => Note(
-          title: noteJson['title'],
-          message: noteJson['message'],
-          timestamp: DateTime.parse(noteJson['timestamp']),
-        )).toList();
+        notes = jsonData
+            .map((noteJson) => Note(
+                  title: noteJson['title'],
+                  message: noteJson['message'],
+                  timestamp: DateTime.parse(noteJson['timestamp']),
+                ))
+            .toList();
       });
     } catch (e) {
       print('Error loading notes: $e');
@@ -55,10 +57,10 @@ class _NotesPageState extends State<NotesScreen> {
       final file = await _localFile;
       List<Map<String, dynamic>> jsonData = notes
           .map((note) => {
-        'title': note.title,
-        'message': note.message,
-        'timestamp': note.timestamp.toIso8601String(),
-      })
+                'title': note.title,
+                'message': note.message,
+                'timestamp': note.timestamp.toIso8601String(),
+              })
           .toList();
       await file.writeAsString(jsonEncode(jsonData));
     } catch (e) {
@@ -72,7 +74,6 @@ class _NotesPageState extends State<NotesScreen> {
     print('File path: $filePath');
     return File(filePath);
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -106,17 +107,35 @@ class _NotesPageState extends State<NotesScreen> {
                 SizedBox(width: 8),
                 ElevatedButton(
                   onPressed: () {
-                    setState(() {
-                      final newNote = Note(
-                        title: _titleController.text,
-                        message: _messageController.text,
-                        timestamp: DateTime.now(),
+                    if (_messageController.text.isEmpty ||
+                        _titleController.text.isEmpty) {
+                      showDialog(
+                        context: context,
+                        builder: (context) => AlertDialog(
+                          title: Text('Feilds are empty'),
+                          content:
+                              Text('Please fill title and message feilds.'),
+                          actions: [
+                            TextButton(
+                              onPressed: () => Navigator.pop(context),
+                              child: Text('OK'),
+                            ),
+                          ],
+                        ),
                       );
-                      notes.add(newNote);
-                      _saveNotes();
-                      _titleController.clear();
-                      _messageController.clear();
-                    });
+                    } else {
+                      setState(() {
+                        final newNote = Note(
+                          title: _titleController.text,
+                          message: _messageController.text,
+                          timestamp: DateTime.now(),
+                        );
+                        notes.add(newNote);
+                        _saveNotes();
+                        _titleController.clear();
+                        _messageController.clear();
+                      });
+                    }
                   },
                   child: Text('Add'),
                 ),
