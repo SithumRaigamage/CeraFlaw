@@ -41,7 +41,7 @@ class DetectionScreen extends StatelessWidget {
                   crossAxisCount: 2,
                   crossAxisSpacing: 10.0,
                   mainAxisSpacing: 10.0,
-                  childAspectRatio: 2.6, // Adjust aspect ratio as needed
+                  childAspectRatio: 2.33, // Adjust aspect ratio as needed
                   children: <Widget>[
                     // div1: Image only
                     Container(

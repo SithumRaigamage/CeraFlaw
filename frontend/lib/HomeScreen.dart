@@ -14,19 +14,24 @@ class HomeContent extends StatefulWidget {
   @override
   _HomeContentState createState() => _HomeContentState();
 }
+
 // Defining the state for the HomeContent widget
 class _HomeContentState extends State<HomeContent> {
   late List<bool> _isHovered;
+  String hpath = "";
+
   // Initializing the hover state for each column in the widget
   @override
   void initState() {
     super.initState();
     _isHovered = List<bool>.generate(6, (index) => false);
   }
+
   // UI of this widget
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView( // Wrap with SingleChildScrollView
+    return SingleChildScrollView(
+      // Wrap with SingleChildScrollView
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -39,22 +44,28 @@ class _HomeContentState extends State<HomeContent> {
             runSpacing: 10,
             children: [
               // buildHoverEffectColumn method for each column
-              buildHoverEffectColumn(0, 'assets/icons/play-button-black.png', 'Start', () {
+              buildHoverEffectColumn(
+                  0, 'assets/icons/play-button-black.png', 'Start', () {
                 _navigateToScreen(context, StartScreen());
               }),
-              buildHoverEffectColumn(1, 'assets/icons/manual-black.png', 'Manual', () {
+              buildHoverEffectColumn(
+                  1, 'assets/icons/manual-black.png', 'Manual', () {
                 _navigateToScreen(context, ManualScreen());
               }),
-              buildHoverEffectColumn(2, 'assets/icons/time-black.png', 'Production History', () {
+              buildHoverEffectColumn(
+                  2, 'assets/icons/time-black.png', 'Production History', () {
                 _navigateToScreen(context, ProductionHistoryScreen());
               }),
-              buildHoverEffectColumn(3, 'assets/icons/settings-black.png', 'Settings', () {
+              buildHoverEffectColumn(
+                  3, 'assets/icons/settings-black.png', 'Settings', () {
                 _navigateToScreen(context, SettingsScreen());
               }),
-              buildHoverEffectColumn(4, 'assets/icons/notes-black.png', 'Notes', () {
+              buildHoverEffectColumn(4, 'assets/icons/notes-black.png', 'Notes',
+                  () {
                 _navigateToScreen(context, NotesScreen());
               }),
-              buildHoverEffectColumn(5, 'assets/icons/logout-black.png', 'Quit', () {
+              buildHoverEffectColumn(5, 'assets/icons/logout-black.png', 'Quit',
+                  () {
                 exit(0);
               }),
             ],
@@ -63,6 +74,7 @@ class _HomeContentState extends State<HomeContent> {
       ),
     );
   }
+
 // handling the hover effect for a button
   Widget buildHoverEffectColumn(
       int index, String imagePath, String label, VoidCallback onTap) {
@@ -104,6 +116,7 @@ class _HomeContentState extends State<HomeContent> {
       ),
     );
   }
+
   // Handling the navigation related to the button
   void _navigateToScreen(BuildContext context, Widget screen) {
     Navigator.push(

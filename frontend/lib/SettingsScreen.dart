@@ -8,6 +8,8 @@ class SettingsScreen extends StatefulWidget {
 
 class _SettingsScreenState extends State<SettingsScreen> {
   String _selectedLanguage = 'English';
+  bool isSelected = false;
+  String path = "assets/ceraflaw_wallpaper.jpg";
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +22,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("assets/ceraflaw_wallpaper.jpg"),
+                image: AssetImage(path),
                 fit: BoxFit.cover,
                 alignment: Alignment.topLeft,
               ),
@@ -29,7 +31,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           //Select Language (Not Implemented)
           Positioned(
             top: 20,
-            right: 20,
+            right: 30,
             child: DropdownButton<String>(
               value: _selectedLanguage,
               onChanged: (newValue) {
@@ -46,6 +48,23 @@ class _SettingsScreenState extends State<SettingsScreen> {
               }).toList(),
             ),
           ),
+          Positioned(
+            top: 25,
+            right: 130,
+            child: Switch(
+                value: isSelected,
+                onChanged: (value) {
+                  setState(() {
+                    isSelected = value;
+                    if (value == true) {
+                      path = "";
+                    } else {
+                      path = "assets/ceraflaw_wallpaper.jpg";
+                    }
+                  });
+                }),
+          ),
+
           //Delete Button
           Positioned(
             top: 100,
