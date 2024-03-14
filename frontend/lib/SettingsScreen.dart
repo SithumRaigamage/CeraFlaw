@@ -28,29 +28,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
             ),
           ),
-          //Select Language (Not Implemented)
-          Positioned(
-            top: 20,
-            right: 30,
-            child: DropdownButton<String>(
-              value: _selectedLanguage,
-              onChanged: (newValue) {
-                setState(() {
-                  _selectedLanguage = newValue!;
-                });
-              },
-              items: <String>['English', 'Sinhala']
-                  .map<DropdownMenuItem<String>>((String value) {
-                return DropdownMenuItem<String>(
-                  value: value,
-                  child: Text(value),
-                );
-              }).toList(),
-            ),
-          ),
           Positioned(
             top: 25,
-            right: 130,
+            right: 80,
             child: Switch(
                 value: isSelected,
                 onChanged: (value) {
