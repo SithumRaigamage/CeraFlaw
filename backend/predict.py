@@ -2,12 +2,12 @@ from ultralytics import YOLO
 import os
 
 # Load a model
-model = YOLO("best.pt")
+model = YOLO("backend/best.pt")
 
 # model.predict(source="data/MacTiles/DSC_0589.JPG")
 
 # Set the input and output folders
-input_folder = 'output_images'
+input_folder = 'backend/output_images'
 
 # loop through all files in input folder
 for filename in os.listdir(input_folder):

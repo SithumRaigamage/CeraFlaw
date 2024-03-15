@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'detectionScreen.dart';
+import 'package:http/http.dart' as http;
 //import 'tile.dart';
 /*
 void main() {
@@ -262,6 +263,7 @@ class _StartScreenState extends State<StartScreen> {
                 String enteredText = _textController.text;
                 print('Tile ID: E001, Batch ID: $enteredText');
                 // Navigate to the next screen or perform other actions
+                handleButtonClick();
                  Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -295,5 +297,77 @@ class _StartScreenState extends State<StartScreen> {
       ],
     );
   }
+
+
+
+  void handleButtonClick() async {
+  if (isSelected && _textController.text.isNotEmpty) {
+    String enteredText = _textController.text;
+    print('Tile ID: E001, Batch ID: $enteredText');
+
+    try {
+      var response = await http.get(Uri.parse('http://127.0.0.1:5000/run-script'));
+      if (response.statusCode == 200) {
+        print('Python script executed successfully');
+        // Navigate to the next screen or perform other actions
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => DetectionScreen(
+              batchId: enteredText,
+            ),
+          ),
+        );
+      } else {
+        print('Failed to execute Python script: ${response.statusCode}');
+        // Show error dialog if execution fails
+        showDialog(
+          context: context,
+          builder: (context) => AlertDialog(
+            title: Text('Error'),
+            content: Text('Failed to execute Python script'),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: Text('OK'),
+              ),
+            ],
+          ),
+        );
+      }
+    } catch (e) {
+      print('Error: $e');
+      // Show error dialog if an error occurs
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: Text('Error'),
+          content: Text('An error occurred while executing the Python script'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: Text('OK'),
+            ),
+          ],
+        ),
+      );
+    }
+  } else {
+    // Show error dialog if conditions are not met
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text('Error'),
+        content: Text('Please select a tile and enter a Batch ID'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text('OK'),
+          ),
+        ],
+      ),
+    );
+  }
+}
 }
 
