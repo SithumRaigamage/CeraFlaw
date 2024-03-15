@@ -7,7 +7,7 @@ class SettingsScreen extends StatefulWidget {
 }
 
 class _SettingsScreenState extends State<SettingsScreen> {
-  String _selectedLanguage = 'English';
+  String selectedLanguage = 'English';
   bool isSelected = false;
   String path = "assets/ceraflaw_wallpaper.jpg";
 
@@ -36,11 +36,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 onChanged: (value) {
                   setState(() {
                     isSelected = value;
-                    if (value == true) {
-                      path = "";
-                    } else {
-                      path = "assets/ceraflaw_wallpaper.jpg";
-                    }
+                    if (isSelected == true) {
+                    } else {}
                   });
                 }),
           ),

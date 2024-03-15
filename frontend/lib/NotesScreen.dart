@@ -112,9 +112,9 @@ class _NotesPageState extends State<NotesScreen> {
                       showDialog(
                         context: context,
                         builder: (context) => AlertDialog(
-                          title: Text('Feilds are empty'),
+                          title: Text('Fields are empty'),
                           content:
-                              Text('Please fill title and message feilds.'),
+                              Text('Please fill title and message fields.'),
                           actions: [
                             TextButton(
                               onPressed: () => Navigator.pop(context),
