@@ -1,0 +1,39 @@
+name: CeraFlaw Frontend Testing (Flutter)
+
+# Events - when to test (- main branch)
+on:
+  push: # when commiting
+    branches:
+      - main
+  pull_request: # when pulling
+    branches:
+      - main
+
+jobs:
+    # Runners
+  test:
+    name: Flutter Test Run
+    runs-on: windows-latest # runtime enviroment
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v2 # checks for the source codes from our repo
+
+      - name: Cache Dependencies (Flutter)
+        uses: actions/cache@v2 # cache the dependancies to avoid downloading each time
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-flutter-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-flutter-
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2 # Sets up Flutter SDK
+        with:
+          flutter-version: '3.x' # Flutter ver. can change 
+
+      - name: Install Dependencies # install dependencies
+        run: flutter pub get
+
+      - name: Flutter Test Run # run tests (for front end)
+        run: flutter test
