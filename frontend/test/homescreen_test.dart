@@ -12,8 +12,8 @@ void main() {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MaterialApp(home: Scaffold(body: HomeContent()))); // Create an instance of CeraFlaw widget
 
-    // check for logo on widget
-    expect(find.byType(Image), findsOneWidget);
+    // check for logo and icons on widget
+    expect(find.byType(Image), findsNWidgets(7));
 
     // check for all buttons (6)
     expect(find.byType(GestureDetector), findsNWidgets(6));
