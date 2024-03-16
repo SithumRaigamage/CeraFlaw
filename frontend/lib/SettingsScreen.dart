@@ -8,7 +8,6 @@ class SettingsScreen extends StatefulWidget {
 }
 
 class _SettingsScreenState extends State<SettingsScreen> {
-  String selectedLanguage = 'English';
   bool isSelected = false;
   String path = "assets/ceraflaw_wallpaper.jpg";
 
