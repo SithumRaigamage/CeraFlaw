@@ -132,7 +132,7 @@ class _StartScreenState extends State<StartScreen> {
           ),
         );
       var response = await http.post(
-        Uri.parse('http://127.0.0.1:5000/run-script'),
+        Uri.parse('http://192.168.1.166:5000/run-script'),  //change the http link to the address you recieve from the server but always keep /run-script
         body: {'start': 'true'},
       );
       if (response.statusCode == 200) {

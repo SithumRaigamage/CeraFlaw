@@ -90,7 +90,7 @@ class DetectionScreen extends StatelessWidget {
                                           // Send a POST request to stop the script execution
                                           try {
                                             var response = await http.get(
-                                            Uri.parse('http://127.0.0.1:5000/run-script?stop=true'),
+                                            Uri.parse('http://192.168.1.166:5000/run-script?stop=true'),   //change the http link to the address you recieve from the server but always keep /run-script?stop=true
                                             );
                                             if (response.statusCode == 200) {
                                               print('Python script terminated successfully');

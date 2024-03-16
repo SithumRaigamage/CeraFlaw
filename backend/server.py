@@ -1,6 +1,7 @@
 from flask import Flask, request
 import subprocess
 import logging
+import socket
 
 app = Flask(__name__)
 script_process = None
@@ -40,4 +41,7 @@ def run_script():
         return f'Error executing script: {e}', 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    ip_address = socket.gethostbyname(socket.gethostname())
+    port = 5000  # Change this to the port you want to use
+    
+    app.run(host=ip_address, port=port, debug=True)
