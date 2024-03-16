@@ -23,7 +23,7 @@ jobs:
         uses: actions/cache@v2 # cache the dependancies to avoid downloading each time
         with:
           path: ~/.pub-cache
-          key: ${{ runner.os }}-flutter-${{ hashFiles('**/pubspec.yaml') }}
+          key: ${{ runner.os }}-flutter-${{ hashFiles('frontend/pubspec.yaml') }}
           restore-keys: |
             ${{ runner.os }}-flutter-
 
@@ -34,6 +34,8 @@ jobs:
 
       - name: Install Dependencies # install dependencies
         run: flutter pub get
+        working-directory: frontend
 
       - name: Flutter Test Run # run tests (for front end)
         run: flutter test
+        working-directory: frontend
