@@ -9,7 +9,6 @@ class SettingsScreen extends StatefulWidget {
 
 class _SettingsScreenState extends State<SettingsScreen> {
   bool isSelected = false;
-  String path = "assets/ceraflaw_wallpaper.jpg";
 
   @override
   void initState() {
@@ -38,16 +37,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
       ),
       body: Stack(
         children: [
-          Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(path),
-                fit: BoxFit.cover,
-                alignment: Alignment.topLeft,
-              ),
-            ),
-          ),
-
           Positioned(
               top: 28,
               right: 160,
