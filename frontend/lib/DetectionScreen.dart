@@ -78,7 +78,7 @@ class DetectionScreen extends StatelessWidget {
                           SizedBox(
                             width: 300,
                             child: ElevatedButton(
-                              onPressed: () {
+                              onPressed: () async {
                                 showDialog(
                                   context: context,
                                   builder: (context) => AlertDialog(
@@ -86,11 +86,11 @@ class DetectionScreen extends StatelessWidget {
                                     content: Text('Quitting this will terminate the program'),
                                     actions: [
                                       TextButton(
-                                        onPressed: () async{
-                                          // Send a POST request to stop the script execution
+                                        onPressed: () async {
                                           try {
+                                            // Send a GET request to stop the script execution
                                             var response = await http.get(
-                                            Uri.parse('http://192.168.1.166:5000/run-script?stop=true'),   //change the http link to the address you recieve from the server but always keep /run-script?stop=true
+                                              Uri.parse('http://localhost:5000/run_script?stop=true'), // Adjusted to match the Flask API route
                                             );
                                             if (response.statusCode == 200) {
                                               print('Python script terminated successfully');
@@ -101,20 +101,19 @@ class DetectionScreen extends StatelessWidget {
                                             print('Error: $e');
                                           }
                                           Navigator.pop(context); // Close the dialog
-                                          Navigator.pop(context); // Close the dialog
+                                          Navigator.pop(context); // Close the dialog to return to the main menu
                                         },
                                         child: Text('Quit'),
-
                                       ),
                                       TextButton(
-                                        onPressed: (){
-                                          Navigator.pop(context); // Close the dialog 
+                                        onPressed: () {
+                                          Navigator.pop(context); // Close the dialog
                                         },
                                         child: Text('Cancel'),
                                       ),
                                     ],
                                   ),
-                                );
+                              );
                               },
                               style: ButtonStyle(
                                 backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
