@@ -70,7 +70,7 @@ class _NotesPageState extends State<NotesScreen> {
 
   Future<File> get _localFile async {
     final directory = await getApplicationDocumentsDirectory();
-    String filePath = '${directory.path}/notes.json';
+    String filePath = '${directory.path}/GitHub/CeraFlaw/notes.json';
     print('File path: $filePath');
     return File(filePath);
   }
@@ -112,9 +112,9 @@ class _NotesPageState extends State<NotesScreen> {
                       showDialog(
                         context: context,
                         builder: (context) => AlertDialog(
-                          title: Text('Feilds are empty'),
+                          title: Text('Fields are empty'),
                           content:
-                              Text('Please fill title and message feilds.'),
+                              Text('Please fill title and message fields.'),
                           actions: [
                             TextButton(
                               onPressed: () => Navigator.pop(context),
