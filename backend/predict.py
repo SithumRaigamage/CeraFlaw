@@ -13,7 +13,7 @@ model = YOLO("backend/best.pt")
 #model(source="videos/tile.mp4", show=True, save=True, conf=0.35)
 
 # Predict, display and save live video
-model(source=0, show=True, save=True, conf=0.35, project="backend")
+model(source=0, show=True, conf=0.35, project="backend")
 
 # Predict multiple files
 # Set the input and output folders
