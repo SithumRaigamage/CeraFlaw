@@ -72,7 +72,7 @@ class _NotesPageState extends State<NotesScreen> {
     // Use Directory.current to get the current working directory
     final directory = Directory.current;
     // Specify the file name and path relative to the current directory
-    String filePath = '${directory.path}/notes.json';
+    String filePath = '${directory.path}\\notes.json';
     print('File path: $filePath');
     return File(filePath);
   }
