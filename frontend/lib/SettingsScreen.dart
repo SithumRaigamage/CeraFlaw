@@ -32,6 +32,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: isSelected ? Colors.black : Colors.white,
       appBar: AppBar(
         title: Text('Settings'),
       ),
@@ -96,7 +97,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               child: Text(
                 'Clear Capture Data',
                 style: TextStyle(
-                  color: Colors.black,
+                  color: isSelected ? Colors.deepPurple : Colors.black,
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
