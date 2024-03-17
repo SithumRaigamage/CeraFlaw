@@ -70,7 +70,7 @@ class _NotesPageState extends State<NotesScreen> {
 
   Future<File> get _localFile async {
     final directory = await getApplicationDocumentsDirectory();
-    String filePath = '${directory.path}/notes.json';
+    String filePath = '${directory.path}/GitHub/CeraFlaw/notes.json';
     print('File path: $filePath');
     return File(filePath);
   }

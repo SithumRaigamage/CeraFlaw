@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 import 'dart:io';
@@ -21,7 +20,7 @@ class _ManualScreenState extends State<ManualScreen> {
   void _loadNotes() async {
     try {
       final directory = await getApplicationDocumentsDirectory();
-      final file = File('${directory.path}/notes.txt');
+      final file = File('${directory.path}/GitHub/CeraFlaw/notes.txt');
       if (await file.exists()) {
         setState(() {
           _notes = file.readAsStringSync();
@@ -40,7 +39,7 @@ class _ManualScreenState extends State<ManualScreen> {
 
     try {
       final directory = await getApplicationDocumentsDirectory();
-      final file = File('${directory.path}/notes.txt');
+      final file = File('${directory.path}/GitHub/CeraFlaw/notes.txt');
       await file.writeAsString(_notes);
     } catch (e) {
       print("Failed to update notes: $e");
@@ -57,7 +56,7 @@ class _ManualScreenState extends State<ManualScreen> {
   void _deleteFile() async {
     try {
       final directory = await getApplicationDocumentsDirectory();
-      final file = File('${directory.path}/notes.txt');
+      final file = File('${directory.path}/GitHub/CeraFlaw/notes.txt');
       if (await file.exists()) {
         await file.delete();
         setState(() {
@@ -102,7 +101,8 @@ class _ManualScreenState extends State<ManualScreen> {
                   children: [
                     Text(
                       'Notes:',
-                      style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 16.0, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(height: 5),
                     Text(
