@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:path_provider/path_provider.dart';
+// import 'package:path_provider/path_provider.dart';
 
 class Note {
   late String title;
@@ -67,11 +67,13 @@ class _NotesPageState extends State<NotesScreen> {
   }
 
   Future<File> get _localFile async {
-    final directory = await getApplicationDocumentsDirectory();
+    // Use Directory.current to get the current working directory
+    final directory = Directory.current;
+    // Specify the file name and path relative to the current directory
     String filePath = '${directory.path}/notes.json';
     print('File path: $filePath');
     return File(filePath);
-  }
+}
 
 
   @override
