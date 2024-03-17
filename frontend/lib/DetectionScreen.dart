@@ -90,7 +90,7 @@ class DetectionScreen extends StatelessWidget {
                                           try {
                                             // Send a GET request to stop the script execution
                                             var response = await http.get(
-                                              Uri.parse('http://localhost:5000/run_script?stop=true'), // Adjusted to match the Flask API route
+                                              Uri.parse('http://localhost:5000/?stop=true'), // Adjusted to match the Flask API route
                                             );
                                             if (response.statusCode == 200) {
                                               print('Python script terminated successfully');
