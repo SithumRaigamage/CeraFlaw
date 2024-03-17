@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
 class DetectionScreen extends StatelessWidget {
   final String batchId;
@@ -9,7 +10,8 @@ class DetectionScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('New Screen'),
+        title: Text('Detecting'),
+        automaticallyImplyLeading: false,
       ),
       body: Stack(
         children: [
@@ -76,46 +78,48 @@ class DetectionScreen extends StatelessWidget {
                           SizedBox(
                             width: 300,
                             child: ElevatedButton(
-                                onPressed: () {},
-                                style: ButtonStyle(
-                                    backgroundColor:
-                                        MaterialStateProperty.all<Color>(
-                                            Colors.blue)),
-                                child: Text('Check Again',
-                                    style: TextStyle(color: Colors.black))),
-                          ),
-                          SizedBox(
-                            width: 300,
-                            child: ElevatedButton(
-                                onPressed: () {},
-                                style: ButtonStyle(
-                                    backgroundColor:
-                                        MaterialStateProperty.all<Color>(
-                                            Colors.blue)),
-                                child: Text('Reject',
-                                    style: TextStyle(color: Colors.black))),
-                          ),
-                          SizedBox(
-                            width: 300,
-                            child: ElevatedButton(
-                                onPressed: () {},
-                                style: ButtonStyle(
-                                    backgroundColor:
-                                        MaterialStateProperty.all<Color>(
-                                            Colors.blue)),
-                                child: Text('Pass',
-                                    style: TextStyle(color: Colors.black))),
-                          ),
-                          SizedBox(
-                            width: 300,
-                            child: ElevatedButton(
-                                onPressed: () {},
-                                style: ButtonStyle(
-                                    backgroundColor:
-                                        MaterialStateProperty.all<Color>(
-                                            Colors.blue)),
-                                child: Text('Back to Main Menu',
-                                    style: TextStyle(color: Colors.black))),
+                              onPressed: () async {
+                                showDialog(
+                                  context: context,
+                                  builder: (context) => AlertDialog(
+                                    title: Text('Warning'),
+                                    content: Text('Quitting this will terminate the program'),
+                                    actions: [
+                                      TextButton(
+                                        onPressed: () async {
+                                          try {
+                                            // Send a GET request to stop the script execution
+                                            var response = await http.get(
+                                              Uri.parse('http://localhost:5000/?stop=true'), // Adjusted to match the Flask API route
+                                            );
+                                            if (response.statusCode == 200) {
+                                              print('Python script terminated successfully');
+                                            } else {
+                                              print('Failed to terminate Python script: ${response.statusCode}');
+                                            }
+                                          } catch (e) {
+                                            print('Error: $e');
+                                          }
+                                          Navigator.pop(context); // Close the dialog
+                                          Navigator.pop(context); // Close the dialog to return to the main menu
+                                        },
+                                        child: Text('Quit'),
+                                      ),
+                                      TextButton(
+                                        onPressed: () {
+                                          Navigator.pop(context); // Close the dialog
+                                        },
+                                        child: Text('Cancel'),
+                                      ),
+                                    ],
+                                  ),
+                              );
+                              },
+                              style: ButtonStyle(
+                                backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                              ),
+                              child: Text('Back to Main Menu', style: TextStyle(color: Colors.black)),
+                            ),
                           ),
                         ],
                       ),
@@ -127,15 +131,6 @@ class DetectionScreen extends StatelessWidget {
                         crossAxisCount: 3,
                         shrinkWrap: true,
                         physics: NeverScrollableScrollPhysics(),
-                        /*children: List.generate(
-                          6, // Total number of images
-                          (index) => Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Image.asset("assets/image_$index.png",
-                                height: 50,
-                                width: 50), // Replace with your image paths
-                          ),
-                        ),*/
                       ),
                     ),
                   ],
