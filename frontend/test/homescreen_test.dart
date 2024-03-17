@@ -8,7 +8,7 @@ import 'package:ceraflaw/HomeScreen.dart';
 // import 'package:ceraflaw/NotesScreen.dart';
 
 void main() {
-  testWidgets('Test CeraFlaw Widget', (WidgetTester tester) async {
+  testWidgets('Test Home Screen', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MaterialApp(home: Scaffold(body: HomeContent()))); // Create an instance of CeraFlaw widget
 
