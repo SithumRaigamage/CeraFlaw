@@ -41,6 +41,7 @@ class _ProductionHistoryScreenState extends State<ProductionHistoryScreen> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text('Production History'),
@@ -53,24 +54,30 @@ class _ProductionHistoryScreenState extends State<ProductionHistoryScreen> {
           ),
         ),
         body: Center(
-          child: SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: SingleChildScrollView(
-              child: DataTable(
-                columns: [
-                  DataColumn(label: Text("ID")),
-                  DataColumn(label: Text("Detection")),
-                  DataColumn(label: Text("Description")),
-                  DataColumn(label: Text("Timestamp")),
-                ],
-                rows: data.map((item) {
-                  return DataRow(cells: [
-                    DataCell(Text(item['id'].toString())), // Ensure the ID is converted to string
-                    DataCell(Text(item['detection'])),
-                    DataCell(Text(item['description'])),
-                    DataCell(Text(item['timestamp'])),
-                  ]);
-                }).toList(),
+          child: Padding(
+            padding: const EdgeInsets.only(top: 20.0),
+            child: Align(
+              alignment: Alignment.topCenter,
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: SingleChildScrollView(
+                  child: DataTable(
+                    columns: [
+                      DataColumn(label: Text("ID")),
+                      DataColumn(label: Text("Detection")),
+                      DataColumn(label: Text("Description")),
+                      DataColumn(label: Text("Timestamp")),
+                    ],
+                    rows: data.map((item) {
+                      return DataRow(cells: [
+                        DataCell(Text(item['id'].toString())),
+                        DataCell(Text(item['detection'])),
+                        DataCell(Text(item['description'])),
+                        DataCell(Text(item['timestamp'])),
+                      ]);
+                    }).toList(),
+                  ),
+                ),
               ),
             ),
           ),
