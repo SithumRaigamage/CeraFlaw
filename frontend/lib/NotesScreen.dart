@@ -16,18 +16,14 @@ class Note {
 }
 
 class NotesScreen extends StatefulWidget {
-<<<<<<< HEAD
-  late List<Note> notes = [];
-=======
   const NotesScreen({super.key});
 
->>>>>>> front_end
   @override
   _NotesPageState createState() => _NotesPageState();
 }
 
 class _NotesPageState extends State<NotesScreen> {
-  
+  late List<Note> notes = [];
   late TextEditingController _titleController;
   late TextEditingController _messageController;
 
@@ -45,13 +41,6 @@ class _NotesPageState extends State<NotesScreen> {
       String contents = await file.readAsString();
       List<dynamic> jsonData = jsonDecode(contents);
       setState(() {
-<<<<<<< HEAD
-        widget.notes = jsonData.map((noteJson) => Note(
-          title: noteJson['title'],
-          message: noteJson['message'],
-          timestamp: DateTime.parse(noteJson['timestamp']),
-        )).toList();
-=======
         notes = jsonData
             .map((noteJson) => Note(
                   title: noteJson['title'],
@@ -59,7 +48,6 @@ class _NotesPageState extends State<NotesScreen> {
                   timestamp: DateTime.parse(noteJson['timestamp']),
                 ))
             .toList();
->>>>>>> front_end
       });
     } catch (e) {
       print('Error loading notes: $e');
@@ -69,7 +57,7 @@ class _NotesPageState extends State<NotesScreen> {
   Future<void> _saveNotes() async {
     try {
       final file = await _localFile;
-      List<Map<String, dynamic>> jsonData = widget.notes
+      List<Map<String, dynamic>> jsonData = notes
           .map((note) => {
                 'title': note.title,
                 'message': note.message,
@@ -86,14 +74,10 @@ class _NotesPageState extends State<NotesScreen> {
     // Use Directory.current to get the current working directory
     final directory = Directory.current;
     // Specify the file name and path relative to the current directory
-<<<<<<< HEAD
-    String filePath = '${directory.path}/notes.json';
-=======
     String filePath = '${directory.path}\\notes.json';
->>>>>>> front_end
     print('File path: $filePath');
     return File(filePath);
-}
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -143,13 +127,6 @@ class _NotesPageState extends State<NotesScreen> {
                           ],
                         ),
                       );
-<<<<<<< HEAD
-                      widget.notes.add(newNote);
-                      _saveNotes();
-                      _titleController.clear();
-                      _messageController.clear();
-                    });
-=======
                     } else {
                       setState(() {
                         final newNote = Note(
@@ -163,7 +140,6 @@ class _NotesPageState extends State<NotesScreen> {
                         _messageController.clear();
                       });
                     }
->>>>>>> front_end
                   },
                   child: const Text('Add'),
                 ),
@@ -172,9 +148,9 @@ class _NotesPageState extends State<NotesScreen> {
           ),
           Expanded(
             child: ListView.builder(
-              itemCount: widget.notes.length,
+              itemCount: notes.length,
               itemBuilder: (context, index) {
-                final note = widget.notes[index];
+                final note = notes[index];
                 return ListTile(
                   title: Text(note.title),
                   subtitle: Text(note.message),
@@ -182,7 +158,7 @@ class _NotesPageState extends State<NotesScreen> {
                     icon: const Icon(Icons.delete),
                     onPressed: () {
                       setState(() {
-                        widget.notes.removeAt(index);
+                        notes.removeAt(index);
                         _saveNotes();
                       });
                     },
