@@ -6,7 +6,7 @@ import 'package:ceraflaw/main.dart';
 void main() {
   testWidgets('Test Main Widget', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(CeraFlaw()); // Create an instance of CeraFlaw widget
+    await tester.pumpWidget(const CeraFlaw()); // Create an instance of CeraFlaw widget
 
     // Verify container parameters
     expect(find.byWidgetPredicate((widget) =>

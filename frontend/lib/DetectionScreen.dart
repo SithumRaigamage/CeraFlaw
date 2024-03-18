@@ -4,13 +4,13 @@ import 'package:http/http.dart' as http;
 class DetectionScreen extends StatelessWidget {
   final String batchId;
 
-  DetectionScreen({required this.batchId});
+  const DetectionScreen({super.key, required this.batchId});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Detecting'),
+        title: const Text('Detecting'),
         automaticallyImplyLeading: false,
       ),
       body: Stack(
@@ -23,13 +23,13 @@ class DetectionScreen extends StatelessWidget {
               child: Text(
                 'Submitted Batch ID: $batchId\n2 by 2 ceramic tile was selected',
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.w300),
+                style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w300),
               ),
             ),
           ),
           Container(
-            margin: EdgeInsets.fromLTRB(0, 60, 0, 0),
-            decoration: BoxDecoration(
+            margin: const EdgeInsets.fromLTRB(0, 60, 0, 0),
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage("assets/ceraflaw_wallpaper.jpg"),
                 fit: BoxFit.cover,
@@ -38,7 +38,7 @@ class DetectionScreen extends StatelessWidget {
             ),
             child: Center(
               child: Container(
-                padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
                 child: GridView.count(
                   crossAxisCount: 2,
                   crossAxisSpacing: 10.0,
@@ -54,7 +54,8 @@ class DetectionScreen extends StatelessWidget {
                     ),
                     // div2: Text Labels with h1 and other text
                     Container(
-                      child: Column(
+                      color: const Color.fromARGB(255, 255, 255, 255),
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text('Details About the tile',
@@ -67,7 +68,6 @@ class DetectionScreen extends StatelessWidget {
                           Text('Defects Indentified :'),
                         ],
                       ),
-                      color: const Color.fromARGB(255, 255, 255, 255),
                     ),
                     // div3: Buttons with black text and equal size
                     Container(
@@ -82,8 +82,8 @@ class DetectionScreen extends StatelessWidget {
                                 showDialog(
                                   context: context,
                                   builder: (context) => AlertDialog(
-                                    title: Text('Warning'),
-                                    content: Text('Quitting this will terminate the program'),
+                                    title: const Text('Warning'),
+                                    content: const Text('Quitting this will terminate the program'),
                                     actions: [
                                       TextButton(
                                         onPressed: () async {
@@ -103,13 +103,13 @@ class DetectionScreen extends StatelessWidget {
                                           Navigator.pop(context); // Close the dialog
                                           Navigator.pop(context); // Close the dialog to return to the main menu
                                         },
-                                        child: Text('Quit'),
+                                        child: const Text('Quit'),
                                       ),
                                       TextButton(
                                         onPressed: () {
                                           Navigator.pop(context); // Close the dialog
                                         },
-                                        child: Text('Cancel'),
+                                        child: const Text('Cancel'),
                                       ),
                                     ],
                                   ),
@@ -118,7 +118,7 @@ class DetectionScreen extends StatelessWidget {
                               style: ButtonStyle(
                                 backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
                               ),
-                              child: Text('Back to Main Menu', style: TextStyle(color: Colors.black)),
+                              child: const Text('Back to Main Menu', style: TextStyle(color: Colors.black)),
                             ),
                           ),
                         ],
@@ -130,7 +130,7 @@ class DetectionScreen extends StatelessWidget {
                       child: GridView.count(
                         crossAxisCount: 3,
                         shrinkWrap: true,
-                        physics: NeverScrollableScrollPhysics(),
+                        physics: const NeverScrollableScrollPhysics(),
                       ),
                     ),
                   ],

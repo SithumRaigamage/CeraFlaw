@@ -16,6 +16,8 @@ class Note {
 }
 
 class NotesScreen extends StatefulWidget {
+  const NotesScreen({super.key});
+
   @override
   _NotesPageState createState() => _NotesPageState();
 }
@@ -81,7 +83,7 @@ class _NotesPageState extends State<NotesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Notes'),
+        title: const Text('Notes'),
       ),
       body: Column(
         children: [
@@ -92,21 +94,21 @@ class _NotesPageState extends State<NotesScreen> {
                 Expanded(
                   child: TextField(
                     controller: _titleController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Title',
                     ),
                   ),
                 ),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 Expanded(
                   child: TextField(
                     controller: _messageController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Message',
                     ),
                   ),
                 ),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 ElevatedButton(
                   onPressed: () {
                     if (_messageController.text.isEmpty ||
@@ -114,13 +116,13 @@ class _NotesPageState extends State<NotesScreen> {
                       showDialog(
                         context: context,
                         builder: (context) => AlertDialog(
-                          title: Text('Fields are empty'),
+                          title: const Text('Fields are empty'),
                           content:
-                              Text('Please fill title and message fields.'),
+                              const Text('Please fill title and message fields.'),
                           actions: [
                             TextButton(
                               onPressed: () => Navigator.pop(context),
-                              child: Text('OK'),
+                              child: const Text('OK'),
                             ),
                           ],
                         ),
@@ -139,7 +141,7 @@ class _NotesPageState extends State<NotesScreen> {
                       });
                     }
                   },
-                  child: Text('Add'),
+                  child: const Text('Add'),
                 ),
               ],
             ),
@@ -153,7 +155,7 @@ class _NotesPageState extends State<NotesScreen> {
                   title: Text(note.title),
                   subtitle: Text(note.message),
                   trailing: IconButton(
-                    icon: Icon(Icons.delete),
+                    icon: const Icon(Icons.delete),
                     onPressed: () {
                       setState(() {
                         notes.removeAt(index);

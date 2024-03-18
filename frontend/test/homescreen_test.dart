@@ -10,7 +10,7 @@ import 'package:ceraflaw/HomeScreen.dart';
 void main() {
   testWidgets('Test Home Screen', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(MaterialApp(home: Scaffold(body: HomeContent()))); // Create an instance of CeraFlaw widget
+    await tester.pumpWidget(const MaterialApp(home: Scaffold(body: HomeContent()))); // Create an instance of CeraFlaw widget
 
     // check for logo and icons on widget
     expect(find.byType(Image), findsNWidgets(7));

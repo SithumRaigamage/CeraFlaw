@@ -3,6 +3,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:io';
 
 class SettingsScreen extends StatefulWidget {
+  const SettingsScreen({super.key});
+
   @override
   _SettingsScreenState createState() => _SettingsScreenState();
 }
@@ -34,14 +36,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return Scaffold(
       backgroundColor: isSelected ? Colors.black : Colors.white,
       appBar: AppBar(
-        title: Text('Settings'),
+        title: const Text('Settings'),
       ),
       body: Stack(
         children: [
           Positioned(
               top: 28,
               right: 160,
-              child: Container(
+              child: SizedBox(
                 width: 30,
                 height: 30,
                 child: Image.asset(isSelected
@@ -83,12 +85,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     });
                     //successful
                     ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text('Data Cleared')),
+                      const SnackBar(content: Text('Data Cleared')),
                     );
                   } else {
                     //location not found
                     ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text('Frames directory not found')),
+                      const SnackBar(content: Text('Frames directory not found')),
                     );
                   }
                 });

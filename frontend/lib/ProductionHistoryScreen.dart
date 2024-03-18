@@ -3,6 +3,8 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class ProductionHistoryScreen extends StatefulWidget {
+  const ProductionHistoryScreen({super.key});
+
   @override
   _ProductionHistoryScreenState createState() => _ProductionHistoryScreenState();
 }
@@ -44,10 +46,10 @@ class _ProductionHistoryScreenState extends State<ProductionHistoryScreen> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Production History'),
+          title: const Text('Production History'),
           centerTitle: true,
           leading: IconButton(
-            icon: Icon(Icons.arrow_back),
+            icon: const Icon(Icons.arrow_back),
             onPressed: () {
               Navigator.pop(context);
             },
@@ -62,7 +64,7 @@ class _ProductionHistoryScreenState extends State<ProductionHistoryScreen> {
                 scrollDirection: Axis.horizontal,
                 child: SingleChildScrollView(
                   child: DataTable(
-                    columns: [
+                    columns: const [
                       DataColumn(label: Text("ID")),
                       DataColumn(label: Text("Detection")),
                       DataColumn(label: Text("Description")),

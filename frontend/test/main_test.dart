@@ -6,7 +6,7 @@ import 'package:ceraflaw/HomeScreen.dart';
 void main() {
   testWidgets('Test main.dart', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(CeraFlaw()); // Create an instance of CeraFlaw widget
+    await tester.pumpWidget(const CeraFlaw()); // Create an instance of CeraFlaw widget
 
     // check availability Homecontent widget
     expect(find.byType(HomeContent), findsOneWidget);

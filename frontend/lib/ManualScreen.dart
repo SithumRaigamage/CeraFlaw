@@ -5,19 +5,23 @@ import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: ManualScreen(),
     );
   }
 }
 
 class ManualScreen extends StatefulWidget {
+  const ManualScreen({super.key});
+
   @override
   _ManualScreenState createState() => _ManualScreenState();
 }
@@ -53,7 +57,7 @@ class _ManualScreenState extends State<ManualScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Manual'),
+        title: const Text('Manual'),
       ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(16.0, 24.0, 16.0, 16.0), // Adjust margin top here
@@ -61,7 +65,7 @@ class _ManualScreenState extends State<ManualScreen> {
           child: SingleChildScrollView(
             child: _manualContent.isNotEmpty
                 ? MarkdownBody(data: _manualContent)
-                : CircularProgressIndicator(), // Show loading indicator while content is loading
+                : const CircularProgressIndicator(), // Show loading indicator while content is loading
           ),
         ),
       ),
