@@ -78,7 +78,7 @@ class _StartScreenState extends State<StartScreen> {
               ),
             ),
             SizedBox(height: 5),
-            Text('E001'),
+            Text('T001'),
           ],
         ),
       ),
@@ -86,6 +86,7 @@ class _StartScreenState extends State<StartScreen> {
   }
 
   Widget buildTextFieldAndButton() {
+    const String tileID = "T001";
     return Row(
       children: [
         Expanded(
@@ -106,7 +107,7 @@ class _StartScreenState extends State<StartScreen> {
           margin: EdgeInsets.only(left: 10),
           child: ElevatedButton(
             onPressed: () {
-                handleButtonClick();
+                handleButtonClick(tileID);
             },
             child: Text('Submit'),
           ),
@@ -116,10 +117,9 @@ class _StartScreenState extends State<StartScreen> {
   }
 
 
-void handleButtonClick() async {
+void handleButtonClick(String selectedTileId) async {
  if (isSelected && _textController.text.isNotEmpty) {
     String enteredText = _textController.text;
-    print('Tile ID: E001, Batch ID: $enteredText');
 
     try {
       // Attempt to start the script
@@ -136,6 +136,7 @@ void handleButtonClick() async {
           MaterialPageRoute(
             builder: (context) => DetectionScreen(
               batchId: enteredText,
+              tileId:selectedTileId,
             ),
           ),
         );
