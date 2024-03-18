@@ -64,7 +64,7 @@ class _HomeContentState extends State<HomeContent> {
                   () {
                 _navigateToScreen(context, NotesScreen());
               }),
-              buildHoverEffectColumn(5, 'assets/icons/logout-black.png', 'Quit',
+              buildHoverEffectColumn(5, 'assets/icons/exit-black.png', 'Quit',
                   () {
                 exit(0);
               }),
