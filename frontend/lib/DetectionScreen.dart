@@ -5,13 +5,13 @@ class DetectionScreen extends StatelessWidget {
   final String batchId;
   final String tileId;
 
-  const DetectionScreen({required this.batchId , required this.tileId});
+  const DetectionScreen({super.key, required this.batchId , required this.tileId});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Detecting'),
+        title: const Text('Detecting'),
         automaticallyImplyLeading: false,
       ),
       body: Center(
@@ -20,16 +20,16 @@ class DetectionScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Center(
+              const Center(
                 child: Text('Details About the Tile',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
 
               // Container holding Batch ID and Tile ID
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 490.0), // Add margin from left and right
-                padding: EdgeInsets.all(10.0), // Add some padding within the container
+                margin: const EdgeInsets.symmetric(horizontal: 490.0), // Add margin from left and right
+                padding: const EdgeInsets.all(10.0), // Add some padding within the container
                 decoration: BoxDecoration(
                   color: Colors.grey[200], // Light gray background for better visibility
                   borderRadius: BorderRadius.circular(5.0), // Add some rounded corners
@@ -39,26 +39,26 @@ class DetectionScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Text('Batch ID:'),
-                        SizedBox(width: 10.0), // Add some spacing between label and value
+                        const Text('Batch ID:'),
+                        const SizedBox(width: 10.0), // Add some spacing between label and value
                         Flexible(
                           child: Text(batchId),
                         ),
                       ],
                     ),
-                    SizedBox(height: 10), // Add spacing between Batch ID and Tile ID
+                    const SizedBox(height: 10), // Add spacing between Batch ID and Tile ID
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Text('Tile ID:'),
-                        SizedBox(width: 10.0), // Add some spacing between label and value
+                        const Text('Tile ID:'),
+                        const SizedBox(width: 10.0), // Add some spacing between label and value
                         Flexible(
                           child: Text(tileId), // Replace with the actual Tile ID
                         ),
                       ],
                     ),
-                    SizedBox(height: 10), // Add spacing between Batch ID and Tile ID
-                    Row(
+                    const SizedBox(height: 10), // Add spacing between Batch ID and Tile ID
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Text('Edge chippings / Broken corners:'),
@@ -68,8 +68,8 @@ class DetectionScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(height: 10), // Add spacing between Batch ID and Tile ID
-                    Row(
+                    const SizedBox(height: 10), // Add spacing between Batch ID and Tile ID
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Text('Surface Defects:'),
@@ -79,8 +79,8 @@ class DetectionScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(height: 10), // Add spacing between Batch ID and Tile ID
-                    Row(
+                    const SizedBox(height: 10), // Add spacing between Batch ID and Tile ID
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Text('Line / Crack:'),
@@ -93,15 +93,14 @@ class DetectionScreen extends StatelessWidget {
                   ],
                 ),
               ),
-
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () async {
                   showDialog(
                     context: context,
                     builder: (context) => AlertDialog(
-                      title: Text('Warning'),
-                      content: Text('Quitting this will terminate the program'),
+                      title: const Text('Warning'),
+                      content: const Text('Quitting this will terminate the program'),
                       actions: [
                         TextButton(
                           onPressed: () async {
@@ -122,13 +121,13 @@ class DetectionScreen extends StatelessWidget {
                             Navigator.pop(context); // Close the dialog
                             Navigator.pop(context); // Close the dialog to return to the main menu
                           },
-                          child: Text('Quit'),
+                          child: const Text('Quit'),
                         ),
                         TextButton(
                           onPressed: () {
                             Navigator.pop(context); // Close the dialog
                           },
-                          child: Text('Cancel'),
+                          child: const Text('Cancel'),
                         ),
                       ],
                     ),
@@ -138,7 +137,7 @@ class DetectionScreen extends StatelessWidget {
                   backgroundColor:
                       MaterialStateProperty.all<Color>(Colors.blue),
                 ),
-                child: Text('Back to Main Menu', style: TextStyle(color: Colors.black)),
+                child: const Text('Back to Main Menu', style: TextStyle(color: Colors.black)),
               ),
             ],
           ),
