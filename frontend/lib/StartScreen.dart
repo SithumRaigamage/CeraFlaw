@@ -53,6 +53,7 @@ class _StartScreenState extends State<StartScreen> {
 
   Widget buildImageTile() {
     return GestureDetector(
+      key: ValueKey('tile'),
       onTap: () {
         setState(() {
           isSelected = !isSelected;
