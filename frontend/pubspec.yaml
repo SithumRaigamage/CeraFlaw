@@ -94,12 +94,12 @@ flutter:
   assets:
   - assets/ceraflaw_wallpaper.jpg
   - assets/logo.png 
-  - assets/icons/play-button-black.png
-  - assets/icons/manual-black.png
-  - assets/icons/time-black.png
-  - assets/icons/settings-black.png
-  - assets/icons/notes-black.png
-  - assets/icons/exit-black.png
+  - assets/dark_icons/play-button-black.png
+  - assets/dark_icons/manual-black.png
+  - assets/dark_icons/time-black.png
+  - assets/dark_icons/settings-black.png
+  - assets/dark_icons/notes-black.png
+  - assets/dark_icons/exit.png
   - assets/ceramictile2.png
   - assets/image_0.png
   - assets/image_1.png
