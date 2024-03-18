@@ -31,12 +31,15 @@ dependencies:
   flutter:
     sdk: flutter
   path_provider: ^2.0.2
+  shared_preferences: ^2.0.8
+  http: ^1.2.0
+  flutter_html: ^2.1.5
+  flutter_markdown: ^0.6.0
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  http: ^1.2.0
 
 dev_dependencies:
   flutter_test:
@@ -61,9 +64,7 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -93,12 +94,12 @@ flutter:
   assets:
   - assets/ceraflaw_wallpaper.jpg
   - assets/logo.png 
-  - assets/icons/icon1.png
-  - assets/icons/icon2.png
-  - assets/icons/icon3.png
-  - assets/icons/icon4.png
-  - assets/icons/icon5.png
-  - assets/icons/icon6.png
+  - assets/dark_icons/play-button-black.png
+  - assets/dark_icons/manual-black.png
+  - assets/dark_icons/time-black.png
+  - assets/dark_icons/settings-black.png
+  - assets/dark_icons/notes-black.png
+  - assets/dark_icons/exit.png
   - assets/ceramictile2.png
   - assets/image_0.png
   - assets/image_1.png
@@ -107,6 +108,8 @@ flutter:
   - assets/image_4.png
   - assets/image_5.png
   - assets/marbletile.jpeg
+  - assets/icons/moon.png
+  - assets/icons/sun (1).png
 
 
     

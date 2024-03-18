@@ -16,7 +16,12 @@ class Note {
 }
 
 class NotesScreen extends StatefulWidget {
+<<<<<<< HEAD
   late List<Note> notes = [];
+=======
+  const NotesScreen({super.key});
+
+>>>>>>> front_end
   @override
   _NotesPageState createState() => _NotesPageState();
 }
@@ -40,11 +45,21 @@ class _NotesPageState extends State<NotesScreen> {
       String contents = await file.readAsString();
       List<dynamic> jsonData = jsonDecode(contents);
       setState(() {
+<<<<<<< HEAD
         widget.notes = jsonData.map((noteJson) => Note(
           title: noteJson['title'],
           message: noteJson['message'],
           timestamp: DateTime.parse(noteJson['timestamp']),
         )).toList();
+=======
+        notes = jsonData
+            .map((noteJson) => Note(
+                  title: noteJson['title'],
+                  message: noteJson['message'],
+                  timestamp: DateTime.parse(noteJson['timestamp']),
+                ))
+            .toList();
+>>>>>>> front_end
       });
     } catch (e) {
       print('Error loading notes: $e');
@@ -56,10 +71,10 @@ class _NotesPageState extends State<NotesScreen> {
       final file = await _localFile;
       List<Map<String, dynamic>> jsonData = widget.notes
           .map((note) => {
-        'title': note.title,
-        'message': note.message,
-        'timestamp': note.timestamp.toIso8601String(),
-      })
+                'title': note.title,
+                'message': note.message,
+                'timestamp': note.timestamp.toIso8601String(),
+              })
           .toList();
       await file.writeAsString(jsonEncode(jsonData));
     } catch (e) {
@@ -71,17 +86,20 @@ class _NotesPageState extends State<NotesScreen> {
     // Use Directory.current to get the current working directory
     final directory = Directory.current;
     // Specify the file name and path relative to the current directory
+<<<<<<< HEAD
     String filePath = '${directory.path}/notes.json';
+=======
+    String filePath = '${directory.path}\\notes.json';
+>>>>>>> front_end
     print('File path: $filePath');
     return File(filePath);
 }
-
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Notes'),
+        title: const Text('Notes'),
       ),
       body: Column(
         children: [
@@ -92,36 +110,62 @@ class _NotesPageState extends State<NotesScreen> {
                 Expanded(
                   child: TextField(
                     controller: _titleController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Title',
                     ),
                   ),
                 ),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 Expanded(
                   child: TextField(
                     controller: _messageController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Message',
                     ),
                   ),
                 ),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 ElevatedButton(
                   onPressed: () {
-                    setState(() {
-                      final newNote = Note(
-                        title: _titleController.text,
-                        message: _messageController.text,
-                        timestamp: DateTime.now(),
+                    if (_messageController.text.isEmpty ||
+                        _titleController.text.isEmpty) {
+                      showDialog(
+                        context: context,
+                        builder: (context) => AlertDialog(
+                          title: const Text('Fields are empty'),
+                          content:
+                              const Text('Please fill title and message fields.'),
+                          actions: [
+                            TextButton(
+                              onPressed: () => Navigator.pop(context),
+                              child: const Text('OK'),
+                            ),
+                          ],
+                        ),
                       );
+<<<<<<< HEAD
                       widget.notes.add(newNote);
                       _saveNotes();
                       _titleController.clear();
                       _messageController.clear();
                     });
+=======
+                    } else {
+                      setState(() {
+                        final newNote = Note(
+                          title: _titleController.text,
+                          message: _messageController.text,
+                          timestamp: DateTime.now(),
+                        );
+                        notes.add(newNote);
+                        _saveNotes();
+                        _titleController.clear();
+                        _messageController.clear();
+                      });
+                    }
+>>>>>>> front_end
                   },
-                  child: Text('Add'),
+                  child: const Text('Add'),
                 ),
               ],
             ),
@@ -135,7 +179,7 @@ class _NotesPageState extends State<NotesScreen> {
                   title: Text(note.title),
                   subtitle: Text(note.message),
                   trailing: IconButton(
-                    icon: Icon(Icons.delete),
+                    icon: const Icon(Icons.delete),
                     onPressed: () {
                       setState(() {
                         widget.notes.removeAt(index);
