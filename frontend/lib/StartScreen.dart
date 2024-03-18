@@ -21,19 +21,19 @@ class _StartScreenState extends State<StartScreen> {
         appBar: AppBar(
           title: Text(_appBarTitle),
           leading: IconButton(
-            icon: Icon(Icons.arrow_back),
+            icon: const Icon(Icons.arrow_back),
             onPressed: () => Navigator.pop(context),
           ),
         ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Expanded(
               child: Container(
-                margin: EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.transparent,
+                margin: const EdgeInsets.all(10),
+                decoration: const BoxDecoration(
+                  color:Colors.transparent,
                 ),
                 child: buildImageTile(),
               ),
@@ -41,7 +41,7 @@ class _StartScreenState extends State<StartScreen> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Container(
-                margin: EdgeInsets.only(bottom: 20),
+                margin: const EdgeInsets.only(bottom: 20),
                 child: buildTextFieldAndButton(),
               ),
             ),
@@ -53,14 +53,14 @@ class _StartScreenState extends State<StartScreen> {
 
   Widget buildImageTile() {
     return GestureDetector(
-      key: ValueKey('tile'),
+      key: const ValueKey('tile'),
       onTap: () {
         setState(() {
           isSelected = !isSelected;
         });
       },
       child: Container(
-        margin: EdgeInsets.all(10),
+        margin: const EdgeInsets.all(10),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -68,7 +68,7 @@ class _StartScreenState extends State<StartScreen> {
               width: 200.0,
               height: 200.0,
               decoration: BoxDecoration(
-                image: DecorationImage(
+                image: const DecorationImage(
                   image: AssetImage('assets/marbletile.jpeg'),
                   fit: BoxFit.cover,
                 ),
@@ -78,8 +78,8 @@ class _StartScreenState extends State<StartScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 5),
-            Text('T001'),
+            const SizedBox(height: 5),
+            const Text('T001'),
           ],
         ),
       ),
@@ -95,7 +95,7 @@ class _StartScreenState extends State<StartScreen> {
             margin: EdgeInsets.only(right: 10),
             child: TextField(
               controller: _textController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 hintText: 'Enter Batch ID',
                 contentPadding: EdgeInsets.all(10),
                 border: OutlineInputBorder(),
@@ -103,14 +103,14 @@ class _StartScreenState extends State<StartScreen> {
             ),
           ),
         ),
-        SizedBox(width: 10),
+        const SizedBox(width: 10),
         Container(
-          margin: EdgeInsets.only(left: 10),
+          margin: const EdgeInsets.only(left: 10),
           child: ElevatedButton(
             onPressed: () {
                 handleButtonClick(tileID);
             },
-            child: Text('Submit'),
+            child: const Text('Submit'),
           ),
         ),
       ],
@@ -180,12 +180,12 @@ void handleButtonClick(String selectedTileId) async {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text('Error'),
-        content: Text('Please select a tile and enter a Batch ID'),
+        title: const Text('Error'),
+        content: const Text('Please select a tile and enter a Batch ID'),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: Text('OK'),
+            child: const Text('OK'),
           ),
         ],
       ),
