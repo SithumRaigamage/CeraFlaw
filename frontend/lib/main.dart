@@ -1,8 +1,10 @@
-import 'package:ceraflaw/HomeScreen.dart';
+// Importing Flutter's material design library and HomeScreen widget from the ceraflaw package
 import 'package:flutter/material.dart';
+import 'package:ceraflaw/HomeScreen.dart';
 
 void main() {
-  runApp(CeraFlaw());
+  // Running the CeraFlaw widget
+  runApp(const CeraFlaw());
 }
 
 class CeraFlaw extends StatelessWidget {
@@ -10,24 +12,15 @@ class CeraFlaw extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(   //frame size is not working need to check on that
-      width: 500,
-      height: 500,
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          body: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/ceraflaw_wallpaper.jpg"),   //setting the wallpaper
-                fit: BoxFit.cover,
-                alignment: Alignment.topLeft,
-              ),
-            ),
-            child: Center(
-              child:HomeContent(),    //adding the homeScreen 
-            ),
-          ),
+    return const MaterialApp(
+      // Disabling the debug banner
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        // Setting the background color of the Scaffold
+        backgroundColor: Color.fromARGB(255, 215, 215, 215),
+        body: Center(
+          // Placing the HomeContent widget in the center
+          child: HomeContent(), 
         ),
       ),
     );

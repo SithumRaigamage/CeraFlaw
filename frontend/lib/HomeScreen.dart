@@ -9,7 +9,7 @@ import 'NotesScreen.dart';
 
 // Defining a new widget for home page
 class HomeContent extends StatefulWidget {
-  const HomeContent({Key? key});
+  const HomeContent({super.key});
 
   //New instance of the state related to this widget
   @override
