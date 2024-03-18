@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:path_provider/path_provider.dart';
+// import 'package:path_provider/path_provider.dart';
 
 class Note {
   late String title;
@@ -16,12 +16,13 @@ class Note {
 }
 
 class NotesScreen extends StatefulWidget {
+  late List<Note> notes = [];
   @override
   _NotesPageState createState() => _NotesPageState();
 }
 
 class _NotesPageState extends State<NotesScreen> {
-  late List<Note> notes = [];
+  
   late TextEditingController _titleController;
   late TextEditingController _messageController;
 
@@ -39,7 +40,7 @@ class _NotesPageState extends State<NotesScreen> {
       String contents = await file.readAsString();
       List<dynamic> jsonData = jsonDecode(contents);
       setState(() {
-        notes = jsonData.map((noteJson) => Note(
+        widget.notes = jsonData.map((noteJson) => Note(
           title: noteJson['title'],
           message: noteJson['message'],
           timestamp: DateTime.parse(noteJson['timestamp']),
@@ -53,7 +54,7 @@ class _NotesPageState extends State<NotesScreen> {
   Future<void> _saveNotes() async {
     try {
       final file = await _localFile;
-      List<Map<String, dynamic>> jsonData = notes
+      List<Map<String, dynamic>> jsonData = widget.notes
           .map((note) => {
         'title': note.title,
         'message': note.message,
@@ -67,11 +68,13 @@ class _NotesPageState extends State<NotesScreen> {
   }
 
   Future<File> get _localFile async {
-    final directory = await getApplicationDocumentsDirectory();
+    // Use Directory.current to get the current working directory
+    final directory = Directory.current;
+    // Specify the file name and path relative to the current directory
     String filePath = '${directory.path}/notes.json';
     print('File path: $filePath');
     return File(filePath);
-  }
+}
 
 
   @override
@@ -112,7 +115,7 @@ class _NotesPageState extends State<NotesScreen> {
                         message: _messageController.text,
                         timestamp: DateTime.now(),
                       );
-                      notes.add(newNote);
+                      widget.notes.add(newNote);
                       _saveNotes();
                       _titleController.clear();
                       _messageController.clear();
@@ -125,9 +128,9 @@ class _NotesPageState extends State<NotesScreen> {
           ),
           Expanded(
             child: ListView.builder(
-              itemCount: notes.length,
+              itemCount: widget.notes.length,
               itemBuilder: (context, index) {
-                final note = notes[index];
+                final note = widget.notes[index];
                 return ListTile(
                   title: Text(note.title),
                   subtitle: Text(note.message),
@@ -135,7 +138,7 @@ class _NotesPageState extends State<NotesScreen> {
                     icon: Icon(Icons.delete),
                     onPressed: () {
                       setState(() {
-                        notes.removeAt(index);
+                        widget.notes.removeAt(index);
                         _saveNotes();
                       });
                     },
