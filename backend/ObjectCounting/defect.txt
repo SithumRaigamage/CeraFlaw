@@ -1,0 +1,3 @@
+edge-chipping/broken-corner
+surface-defects
+line/crack
