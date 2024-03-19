@@ -1,64 +1,89 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
 
-class ProductionHistoryScreen extends StatelessWidget {
+class ProductionHistoryScreen extends StatefulWidget {
+  const ProductionHistoryScreen({super.key});
+
   @override
-  Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async {
-        // Handle back button press event
-        Navigator.pop(context);
-        return true; // Return true to allow back navigation
-      },
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text('Production History'),
-        ),
-        body: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/ceraflaw_wallpaper.jpg"),
-              fit: BoxFit.cover,
-              alignment: Alignment.topLeft,
-            ),
-          ),
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                _buildHistoryEntry('2024-02-26 09:00', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'),
-                _buildHistoryEntry('2024-02-25 15:30', 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
+  _ProductionHistoryScreenState createState() => _ProductionHistoryScreenState();
+}
+
+class _ProductionHistoryScreenState extends State<ProductionHistoryScreen> {
+  List<dynamic> data = [];
+  bool isLoading = true; // Track loading state
+
+  Future<void> getData() async {
+    var url = Uri.parse('http://192.168.1.78/ceraflaw/getdata.php');
+    try {
+      var response = await http.get(url);
+      // print('HTTP Response status code: ${response.statusCode}');
+      // print('HTTP Response body: ${response.body}'); // Debug print
+      
+      if (response.statusCode == 200) {
+        setState(() {
+          data = json.decode(response.body);
+          isLoading = false; // Data is fetched, set loading to false
+        });
+        // print('Data decoded from JSON: $data'); // Debug print
+      } else {
+        print('Failed to load data: ${response.statusCode}');
+      }
+    } catch (e) {
+      print('Error: $e');
+    }
   }
 
-  Widget _buildHistoryEntry(String dateTime, String report) {
-    return Container(
-      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-      padding: EdgeInsets.all(10),
-      decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.8),
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            'Date/Time: $dateTime',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 16,
+  @override
+  void initState() {
+    super.initState();
+    getData();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Production History'),
+          centerTitle: true,
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
+        ),
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 20.0),
+            child: Align(
+              alignment: Alignment.topCenter,
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: SingleChildScrollView(
+                  child: DataTable(
+                    columns: const [
+                      DataColumn(label: Text("ID")),
+                      DataColumn(label: Text("Detection")),
+                      DataColumn(label: Text("Description")),
+                      DataColumn(label: Text("Timestamp")),
+                    ],
+                    rows: data.map((item) {
+                      return DataRow(cells: [
+                        DataCell(Text(item['id'].toString())),
+                        DataCell(Text(item['detection'])),
+                        DataCell(Text(item['description'])),
+                        DataCell(Text(item['timestamp'])),
+                      ]);
+                    }).toList(),
+                  ),
+                ),
+              ),
             ),
           ),
-          SizedBox(height: 5),
-          Text(
-            'Report: $report',
-            style: TextStyle(fontSize: 14),
-          ),
-        ],
+        ),
       ),
     );
   }

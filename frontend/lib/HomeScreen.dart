@@ -9,7 +9,7 @@ import 'NotesScreen.dart';
 
 // Defining a new widget for home page
 class HomeContent extends StatefulWidget {
-  const HomeContent({Key? key});
+  const HomeContent({super.key});
 
   //New instance of the state related to this widget
   @override
@@ -35,30 +35,30 @@ class _HomeContentState extends State<HomeContent> {
       children: [
         // CeraFlaw logo
         Image.asset('assets/logo.png', width: 250, height: 250),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         // Creating buttons
         Wrap(
           spacing: 50,
           runSpacing: 10,
           children: [
             // buildHoverEffectColumn method for each column
-            buildHoverEffectColumn(0, 'assets/icons/icon1.png', 'Start', () {
-              _navigateToScreen(context, StartScreen());
+            buildHoverEffectColumn(0, 'assets/dark_icons/play-button-black.png', 'Start', () {
+              _navigateToScreen(context, const StartScreen());
             }),
-            buildHoverEffectColumn(1, 'assets/icons/icon2.png', 'Manual', () {
-              _navigateToScreen(context, ManualScreen());
+            buildHoverEffectColumn(1, 'assets/dark_icons/manual-black.png', 'Manual', () {
+              _navigateToScreen(context, const ManualScreen());
             }),
             buildHoverEffectColumn(
-                2, 'assets/icons/icon3.png', 'Production History', () {
-              _navigateToScreen(context, ProductionHistoryScreen());
+                2, 'assets/dark_icons/time-black.png', 'Production History', () {
+              _navigateToScreen(context, const ProductionHistoryScreen());
             }),
-            buildHoverEffectColumn(3, 'assets/icons/icon4.png', 'Settings', () {
-              _navigateToScreen(context, SettingsScreen());
+            buildHoverEffectColumn(3, 'assets/dark_icons/settings-black.png', 'Settings', () {
+              _navigateToScreen(context, const SettingsScreen());
             }),
-            buildHoverEffectColumn(4, 'assets/icons/icon5.png', 'Notes', () {
-              _navigateToScreen(context, NotesScreen());
+            buildHoverEffectColumn(4, 'assets/dark_icons/notes-black.png', 'Notes', () {
+              _navigateToScreen(context, const NotesScreen());
             }),
-            buildHoverEffectColumn(5, 'assets/icons/icon6.png', 'Quit', () {
+            buildHoverEffectColumn(5, 'assets/dark_icons/exit.png', 'Quit', () {
               exit(0); //exit condition
             }),
           ],
@@ -84,8 +84,8 @@ class _HomeContentState extends State<HomeContent> {
       child: GestureDetector(
         onTap: onTap,
         child: AnimatedContainer(
-          duration: Duration(milliseconds: 200),
-          padding: EdgeInsets.all(10),
+          duration: const Duration(milliseconds: 200),
+          padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
             border: Border.all(
                 color: _isHovered[index] ? Colors.black : Colors.transparent,
@@ -95,10 +95,10 @@ class _HomeContentState extends State<HomeContent> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(imagePath, width: 80, height: 80), //icon image
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Text(
                 label, //icon label
-                style: TextStyle(
+                style: const TextStyle(
                   fontWeight: FontWeight.bold, //icon label settings
                 ),
               ),

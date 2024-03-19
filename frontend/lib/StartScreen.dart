@@ -3,6 +3,8 @@ import 'detectionScreen.dart';
 import 'package:http/http.dart' as http;
 
 class StartScreen extends StatefulWidget {
+  const StartScreen({super.key});
+
   @override
   _StartScreenState createState() => _StartScreenState();
 }
@@ -21,19 +23,19 @@ class _StartScreenState extends State<StartScreen> {
         appBar: AppBar(
           title: Text(_appBarTitle),
           leading: IconButton(
-            icon: Icon(Icons.arrow_back),
+            icon: const Icon(Icons.arrow_back),
             onPressed: () => Navigator.pop(context),
           ),
         ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Expanded(
               child: Container(
-                margin: EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.transparent,
+                margin: const EdgeInsets.all(10),
+                decoration: const BoxDecoration(
+                  color:Colors.transparent,
                 ),
                 child: buildImageTile(),
               ),
@@ -41,7 +43,7 @@ class _StartScreenState extends State<StartScreen> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Container(
-                margin: EdgeInsets.only(bottom: 20),
+                margin: const EdgeInsets.only(bottom: 20),
                 child: buildTextFieldAndButton(),
               ),
             ),
@@ -53,13 +55,14 @@ class _StartScreenState extends State<StartScreen> {
 
   Widget buildImageTile() {
     return GestureDetector(
+      key: const ValueKey('tile'),
       onTap: () {
         setState(() {
           isSelected = !isSelected;
         });
       },
       child: Container(
-        margin: EdgeInsets.all(10),
+        margin: const EdgeInsets.all(10),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -67,7 +70,7 @@ class _StartScreenState extends State<StartScreen> {
               width: 200.0,
               height: 200.0,
               decoration: BoxDecoration(
-                image: DecorationImage(
+                image: const DecorationImage(
                   image: AssetImage('assets/marbletile.jpeg'),
                   fit: BoxFit.cover,
                 ),
@@ -77,8 +80,8 @@ class _StartScreenState extends State<StartScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 5),
-            Text('E001'),
+            const SizedBox(height: 5),
+            const Text('T001'),
           ],
         ),
       ),
@@ -86,14 +89,15 @@ class _StartScreenState extends State<StartScreen> {
   }
 
   Widget buildTextFieldAndButton() {
+    const String tileID = "T001";
     return Row(
       children: [
         Expanded(
           child: Container(
-            margin: EdgeInsets.only(right: 10),
+            margin: const EdgeInsets.only(right: 10),
             child: TextField(
               controller: _textController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 hintText: 'Enter Batch ID',
                 contentPadding: EdgeInsets.all(10),
                 border: OutlineInputBorder(),
@@ -101,14 +105,14 @@ class _StartScreenState extends State<StartScreen> {
             ),
           ),
         ),
-        SizedBox(width: 10),
+        const SizedBox(width: 10),
         Container(
-          margin: EdgeInsets.only(left: 10),
+          margin: const EdgeInsets.only(left: 10),
           child: ElevatedButton(
             onPressed: () {
-                handleButtonClick();
+                handleButtonClick(tileID);
             },
-            child: Text('Submit'),
+            child: const Text('Submit'),
           ),
         ),
       ],
@@ -116,10 +120,9 @@ class _StartScreenState extends State<StartScreen> {
   }
 
 
-void handleButtonClick() async {
+void handleButtonClick(String selectedTileId) async {
  if (isSelected && _textController.text.isNotEmpty) {
     String enteredText = _textController.text;
-    print('Tile ID: E001, Batch ID: $enteredText');
 
     try {
       // Attempt to start the script
@@ -136,6 +139,7 @@ void handleButtonClick() async {
           MaterialPageRoute(
             builder: (context) => DetectionScreen(
               batchId: enteredText,
+              tileId:selectedTileId,
             ),
           ),
         );
@@ -145,12 +149,12 @@ void handleButtonClick() async {
         showDialog(
           context: context,
           builder: (context) => AlertDialog(
-            title: Text('Error'),
-            content: Text('Failed to start Python script'),
+            title: const Text('Error'),
+            content: const Text('Failed to start Python script'),
             actions: [
               TextButton(
                 onPressed: () => Navigator.pop(context),
-                child: Text('OK'),
+                child: const Text('OK'),
               ),
             ],
           ),
@@ -162,12 +166,12 @@ void handleButtonClick() async {
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
-          title: Text('Error'),
-          content: Text('An error occurred while starting the Python script'),
+          title: const Text('Error'),
+          content: const Text('An error occurred while starting the Python script'),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: Text('OK'),
+              child: const Text('OK'),
             ),
           ],
         ),
@@ -178,12 +182,12 @@ void handleButtonClick() async {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text('Error'),
-        content: Text('Please select a tile and enter a Batch ID'),
+        title: const Text('Error'),
+        content: const Text('Please select a tile and enter a Batch ID'),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: Text('OK'),
+            child: const Text('OK'),
           ),
         ],
       ),
