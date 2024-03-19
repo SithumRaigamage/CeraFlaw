@@ -15,19 +15,18 @@ class Note {
 }
 
 class NotesScreen extends StatefulWidget {
-  const NotesScreen({super.key});
+  const NotesScreen({Key? key}) : super(key: key);
 
   @override
-  NotesScreenState createState() => NotesScreenState();
-
+  _NotesScreenState createState() => _NotesScreenState();
 }
 
-class NotesScreenState extends State<NotesScreen> {
+class _NotesScreenState extends State<NotesScreen> {
   late List<Note> notes = [];
   late TextEditingController _titleController;
   late TextEditingController _messageController;
 
-  List<Note> getNotes(){
+  List<Note> getNotes() {
     return notes;
   }
 
