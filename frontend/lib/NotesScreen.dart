@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
-// import 'package:path_provider/path_provider.dart';
 
 class Note {
   late String title;
@@ -19,13 +18,18 @@ class NotesScreen extends StatefulWidget {
   const NotesScreen({super.key});
 
   @override
-  _NotesPageState createState() => _NotesPageState();
+  NotesScreenState createState() => NotesScreenState();
+
 }
 
-class _NotesPageState extends State<NotesScreen> {
+class NotesScreenState extends State<NotesScreen> {
   late List<Note> notes = [];
   late TextEditingController _titleController;
   late TextEditingController _messageController;
+
+  List<Note> getNotes(){
+    return notes;
+  }
 
   @override
   void initState() {
@@ -71,11 +75,8 @@ class _NotesPageState extends State<NotesScreen> {
   }
 
   Future<File> get _localFile async {
-    // Use Directory.current to get the current working directory
     final directory = Directory.current;
-    // Specify the file name and path relative to the current directory
-    String filePath = '${directory.path}\\notes.json';
-    print('File path: $filePath');
+    String filePath = '${directory.path}/notes.json';
     return File(filePath);
   }
 

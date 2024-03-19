@@ -6,18 +6,25 @@ void main() {
   group('NotesScreen display tests', () {
     late TextEditingController titleController;
     late TextEditingController messageController;
-    late NotesScreen notesScreen;
+    late NotesScreenState notesScreen;
 
     setUp(() {
       // initializing controllers and Notescreen instance before tests
       titleController = TextEditingController();
       messageController = TextEditingController();
-      notesScreen = NotesScreen();
+      notesScreen = NotesScreenState(); // Creating an instance directly
     });
 
     testWidgets('Adding new note test', (WidgetTester tester) async {
-      await tester.pumpWidget(MaterialApp(home: Scaffold(body: notesScreen)));
-
+      await tester.pumpWidget(MaterialApp(
+        home: Scaffold(
+          body: Builder(
+            builder: (BuildContext context) {
+              return notesScreen.widget;
+            },
+          ),
+        ),
+      ));
       // simulation (adding note)
       titleController.text = 'Test Title';
       messageController.text = 'Test Message';
@@ -27,7 +34,7 @@ void main() {
       await tester.pump();
 
       // one note should be added
-      expect(notesScreen.notes.length, 1);
+      expect(notesScreen.getNotes().length, 1);
     });
 
     testWidgets('Delete a note test', (WidgetTester tester) async {
@@ -38,14 +45,22 @@ void main() {
         timestamp: DateTime.now(),
       ));
 
-      await tester.pumpWidget(MaterialApp(home: Scaffold(body: notesScreen)));
+      await tester.pumpWidget(MaterialApp(
+        home: Scaffold(
+          body: Builder(
+            builder: (BuildContext context) {
+              return notesScreen.widget;
+            },
+          ),
+        ),
+      ));
 
       // tapping delete icon
       await tester.tap(find.byIcon(Icons.delete).first);
       await tester.pump();
 
       // note should be deleted
-      expect(notesScreen.notes.length, 0);
+      expect(notesScreen.getNotes().length, 0);
     });
   });
 }
