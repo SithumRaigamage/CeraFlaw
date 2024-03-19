@@ -6,7 +6,7 @@ import 'package:ceraflaw/StartScreen.dart';
 void main() {
   testWidgets('StartScreen Test', (WidgetTester tester) async {
     // build StartScreen widget
-    await tester.pumpWidget(MaterialApp(
+    await tester.pumpWidget(const MaterialApp(
       home: StartScreen(),
     ));
     // checking if the ui elements exsists
@@ -21,7 +21,7 @@ void main() {
 
   testWidgets('Button functionality', (WidgetTester tester) async {
     // build StartScreen widget
-    await tester.pumpWidget(MaterialApp(
+    await tester.pumpWidget(const MaterialApp(
       home: StartScreen(),
     ));
 
@@ -33,7 +33,7 @@ void main() {
     expect(find.text('Please select a tile and enter a Batch ID'), findsOneWidget);
 
     // selecting a tile
-    await tester.tap(find.byWidgetPredicate((widget) => widget is GestureDetector && widget.key == ValueKey('tile')));
+    await tester.tap(find.byWidgetPredicate((widget) => widget is GestureDetector && widget.key == const ValueKey('tile')));
     await tester.pump();
 
     // entering a batch ID

@@ -15,7 +15,7 @@ class Note {
 }
 
 class NotesScreen extends StatefulWidget {
-  const NotesScreen({Key? key}) : super(key: key);
+  const NotesScreen({super.key});
 
   @override
   _NotesScreenState createState() => _NotesScreenState();

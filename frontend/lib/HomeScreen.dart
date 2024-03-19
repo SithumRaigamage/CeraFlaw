@@ -43,7 +43,7 @@ class _HomeContentState extends State<HomeContent> {
           children: [
             // buildHoverEffectColumn method for each column
             buildHoverEffectColumn(0, 'assets/dark_icons/play-button-black.png', 'Start', () {
-              _navigateToScreen(context, StartScreen());
+              _navigateToScreen(context, const StartScreen());
             }),
             buildHoverEffectColumn(1, 'assets/dark_icons/manual-black.png', 'Manual', () {
               _navigateToScreen(context, const ManualScreen());

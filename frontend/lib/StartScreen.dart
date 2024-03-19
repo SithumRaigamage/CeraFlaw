@@ -3,6 +3,8 @@ import 'detectionScreen.dart';
 import 'package:http/http.dart' as http;
 
 class StartScreen extends StatefulWidget {
+  const StartScreen({super.key});
+
   @override
   _StartScreenState createState() => _StartScreenState();
 }
@@ -92,7 +94,7 @@ class _StartScreenState extends State<StartScreen> {
       children: [
         Expanded(
           child: Container(
-            margin: EdgeInsets.only(right: 10),
+            margin: const EdgeInsets.only(right: 10),
             child: TextField(
               controller: _textController,
               decoration: const InputDecoration(
@@ -147,12 +149,12 @@ void handleButtonClick(String selectedTileId) async {
         showDialog(
           context: context,
           builder: (context) => AlertDialog(
-            title: Text('Error'),
-            content: Text('Failed to start Python script'),
+            title: const Text('Error'),
+            content: const Text('Failed to start Python script'),
             actions: [
               TextButton(
                 onPressed: () => Navigator.pop(context),
-                child: Text('OK'),
+                child: const Text('OK'),
               ),
             ],
           ),
@@ -164,12 +166,12 @@ void handleButtonClick(String selectedTileId) async {
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
-          title: Text('Error'),
-          content: Text('An error occurred while starting the Python script'),
+          title: const Text('Error'),
+          content: const Text('An error occurred while starting the Python script'),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: Text('OK'),
+              child: const Text('OK'),
             ),
           ],
         ),

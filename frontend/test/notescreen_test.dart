@@ -8,7 +8,7 @@ void main() {
   group('NotesScreen tests', () {
     testWidgets('Adding a note', (WidgetTester tester) async {
       // Build our app and trigger a frame.
-      await tester.pumpWidget(MaterialApp(home: NotesScreen()));
+      await tester.pumpWidget(const MaterialApp(home: NotesScreen()));
 
       // Fill the text fields with test values.
       await tester.enterText(find.byType(TextField).first, 'Test Title');
@@ -25,7 +25,7 @@ void main() {
 
     testWidgets('Deleting a note', (WidgetTester tester) async {
       // Build our app and trigger a frame.
-      await tester.pumpWidget(MaterialApp(home: NotesScreen()));
+      await tester.pumpWidget(const MaterialApp(home: NotesScreen()));
 
       // Fill the text fields with test values.
       await tester.enterText(find.byType(TextField).first, 'Test Title');
