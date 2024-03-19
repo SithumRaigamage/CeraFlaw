@@ -1,6 +1,6 @@
-# My Awesome App
+# CeraFlaw
 
-Welcome to My Awesome App! This is a brief introduction to what your app does and how to use it.
+Welcome to CeraFlaw! This is a brief introduction to what our  app does and how to use it.
 
 ## Getting Started
 

@@ -15,7 +15,7 @@ class DetectionScreen extends StatelessWidget {
         automaticallyImplyLeading: false,
       ),
       body: Center(
-        child: Container(
+        child: SizedBox(
           width: double.infinity, // Make the container take full width
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
