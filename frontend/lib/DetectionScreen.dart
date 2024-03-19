@@ -1,11 +1,51 @@
+import 'dart:async';
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-class DetectionScreen extends StatelessWidget {
+class DetectionScreen extends StatefulWidget {
   final String batchId;
   final String tileId;
 
-  const DetectionScreen({super.key, required this.batchId , required this.tileId});
+  const DetectionScreen({super.key, required this.batchId, required this.tileId});
+
+  @override
+  _DetectionScreenState createState() => _DetectionScreenState();
+}
+
+class _DetectionScreenState extends State<DetectionScreen> {
+  Map<String, dynamic>? countData;
+  late Timer _timer;
+
+  @override
+  void initState() {
+    super.initState();
+    fetchData(); // Fetch initial data
+    _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
+      fetchData(); // Fetch data every 1 seconds
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer.cancel(); // Cancel the timer when the widget is disposed
+    super.dispose();
+  }
+
+  Future<void> fetchData() async {
+    try {
+      final response = await http.get(Uri.parse('http://localhost:5000/get_counts'));
+      if (response.statusCode == 200) {
+        setState(() {
+          countData = Map<String, dynamic>.from(json.decode(response.body));
+        });
+      } else {
+        print('Failed to fetch counts: ${response.statusCode}');
+      }
+    } catch (e) {
+      print('Error: $e');
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +56,7 @@ class DetectionScreen extends StatelessWidget {
       ),
       body: Center(
         child: SizedBox(
-          width: double.infinity, // Make the container take full width
+          width: double.infinity,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -25,68 +65,66 @@ class DetectionScreen extends StatelessWidget {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               ),
               const SizedBox(height: 10),
-
-              // Container holding Batch ID and Tile ID
               Container(
-                margin: const EdgeInsets.symmetric(horizontal: 490.0), // Add margin from left and right
-                padding: const EdgeInsets.all(10.0), // Add some padding within the container
+                margin: const EdgeInsets.symmetric(horizontal: 490.0),
+                padding: const EdgeInsets.all(10.0),
                 decoration: BoxDecoration(
-                  color: Colors.grey[200], // Light gray background for better visibility
-                  borderRadius: BorderRadius.circular(5.0), // Add some rounded corners
+                  color: Colors.grey[200],
+                  borderRadius: BorderRadius.circular(5.0),
                 ),
-                child: Column( // Use Row for horizontal alignment
+                child: Column(
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         const Text('Batch ID:'),
-                        const SizedBox(width: 10.0), // Add some spacing between label and value
+                        const SizedBox(width: 10.0),
                         Flexible(
-                          child: Text(batchId),
+                          child: Text(widget.batchId),
                         ),
                       ],
                     ),
-                    const SizedBox(height: 10), // Add spacing between Batch ID and Tile ID
+                    const SizedBox(height: 10),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         const Text('Tile ID:'),
-                        const SizedBox(width: 10.0), // Add some spacing between label and value
+                        const SizedBox(width: 10.0),
                         Flexible(
-                          child: Text(tileId), // Replace with the actual Tile ID
+                          child: Text(widget.tileId),
                         ),
                       ],
                     ),
-                    const SizedBox(height: 10), // Add spacing between Batch ID and Tile ID
-                    const Row(
+                    const SizedBox(height: 10),
+                    Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Text('Edge chippings / Broken corners:'),
-                        SizedBox(width: 10.0), // Add some spacing between label and value
+                        const Text('Edge chippings / Broken corners:'),
+                        const SizedBox(width: 10.0),
                         Flexible(
-                          child: Text("N/A"), // Replace with the actual Tile ID
+                          child: Text(countData?['edge_chipping_broken_corner_count'].toString() ?? 'N/A'),
                         ),
                       ],
                     ),
-                    const SizedBox(height: 10), // Add spacing between Batch ID and Tile ID
-                    const Row(
+                    const SizedBox(height: 10),
+                    Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Text('Surface Defects:'),
-                        SizedBox(width: 10.0), // Add some spacing between label and value
+                        const Text('Surface Defects:'),
+                        const SizedBox(width: 10.0),
                         Flexible(
-                          child: Text("N/A"), // Replace with the actual Tile ID
+                          child: Text(countData?['surface_defect_count'].toString() ?? 'N/A'),
                         ),
                       ],
                     ),
-                    const SizedBox(height: 10), // Add spacing between Batch ID and Tile ID
-                    const Row(
+                    const SizedBox(height: 10),
+                    Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Text('Line / Crack:'),
-                        SizedBox(width: 10.0), // Add some spacing between label and value
+                        const Text('Line / Crack:'),
+                        const SizedBox(width: 10.0),
                         Flexible(
-                          child: Text("N/A"), // Replace with the actual Tile ID
+                          child: Text(countData?['line_crack_count'].toString() ?? 'N/A'),
                         ),
                       ],
                     ),
@@ -134,8 +172,7 @@ class DetectionScreen extends StatelessWidget {
                   );
                 },
                 style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all<Color>(Colors.blue),
+                  backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
                 ),
                 child: const Text('Back to Main Menu', style: TextStyle(color: Colors.black)),
               ),

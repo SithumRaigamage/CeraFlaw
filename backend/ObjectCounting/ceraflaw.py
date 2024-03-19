@@ -1,11 +1,16 @@
 import cv2
 import pandas as pd
+import requests
 from ultralytics import YOLO
 from tracker import *
 import cvzone
 
+API_URL = 'http://localhost:5000/update_counts'
 model = YOLO('backend/ObjectCounting/best.pt')
 
+# Function to send counts to the Flask API
+def send_counts_to_api(count_data):
+    requests.post(API_URL, json=count_data)
 
 def RGB(event, x, y, flags, param):
     if event == cv2.EVENT_MOUSEMOVE:
@@ -13,7 +18,7 @@ def RGB(event, x, y, flags, param):
         print(colorsBGR)
 
 
-cv2.namedWindow('RGB')
+cv2.namedWindow('CeraFlaw')
 # cv2.setMouseCallback('RGB', RGB)
 cap = cv2.VideoCapture(0)
 
@@ -135,15 +140,27 @@ while True:
     surface_defect_count = len(counter2)
     line_crack_count = len(counter3)
 
-    print(edge_chipping_broken_corner_count)
-    print(surface_defect_count)
-    print(line_crack_count)
+    #commneting this down so the terminal is clear
+    #print(edge_chipping_broken_corner_count)
+    #print(surface_defect_count)
+    #print(line_crack_count)
+    
+    #setting the counts to a list
+    count_data = {
+        'edge_chipping_broken_corner_count': edge_chipping_broken_corner_count,
+        'surface_defect_count': surface_defect_count,
+        'line_crack_count': line_crack_count
+    }
 
-    cvzone.putTextRect(frame, f'edge-chipping/broken-corner:-{edge_chipping_broken_corner_count}', (19, 30), 2, 1)
-    cvzone.putTextRect(frame, f'surface-defect:-{surface_defect_count}', (19, 70), 2, 1)
-    cvzone.putTextRect(frame, f'line/crack:-{line_crack_count}', (19, 115), 2, 1)
+    # Send counts to the Flask API
+    send_counts_to_api(count_data)
 
-    cv2.imshow("RGB", frame)
+    #Commenting this down so that the screen does not show the result
+    #cvzone.putTextRect(frame, f'edge-chipping/broken-corner:-{edge_chipping_broken_corner_count}', (19, 30), 2, 1)
+    #cvzone.putTextRect(frame, f'surface-defect:-{surface_defect_count}', (19, 70), 2, 1)
+    #cvzone.putTextRect(frame, f'line/crack:-{line_crack_count}', (19, 115), 2, 1)
+
+    cv2.imshow("Ceraflaw", frame)
     if cv2.waitKey(1) & 0xFF == 27:
         break
 

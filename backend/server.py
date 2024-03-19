@@ -1,5 +1,5 @@
 import sys
-from flask import Flask, request
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 import subprocess
 import logging
@@ -47,6 +47,21 @@ def run_script():
     except Exception as e:
         logging.error(f'Error executing script: {e}')
         return f'Error executing script: {e}', 500
+
+# Variable to store the counts received from the script
+count_data = {}
+
+@app.route('/update_counts', methods=['POST'])
+def update_counts():
+    global count_data
+    data = request.json  # Assuming the counts will be sent in JSON format
+    count_data = data
+    return 'Counts updated successfully', 200
+
+@app.route('/get_counts', methods=['GET'])
+def get_counts():
+    global count_data
+    return jsonify(count_data), 200
 
 if __name__ == '__main__':
     port = 5000 # Change if necessary
