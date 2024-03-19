@@ -7,7 +7,7 @@ void main() {
   // test loading indicator is displayed before content is loaded
   testWidgets('Testing loading indicator', (WidgetTester tester) async {
     // pump the widget
-    await tester.pumpWidget(MaterialApp(
+    await tester.pumpWidget(const MaterialApp(
       home: ManualScreen(),
     ));
 
@@ -21,7 +21,7 @@ void main() {
   // test the app bar title is 'Manual'
   testWidgets('Testing app bar title', (WidgetTester tester) async {
     // pump the widget
-    await tester.pumpWidget(MaterialApp(
+    await tester.pumpWidget(const MaterialApp(
       home: ManualScreen(),
     ));
 
@@ -30,7 +30,7 @@ void main() {
   });
 
   testWidgets('Test if Scaffold is present', (WidgetTester tester) async {
-    await tester.pumpWidget(MaterialApp(
+    await tester.pumpWidget(const MaterialApp(
       home: ManualScreen(),
     ));
 
@@ -39,7 +39,7 @@ void main() {
   });
 
   testWidgets('Test if SingleChildScrollView is present', (WidgetTester tester) async {
-    await tester.pumpWidget(MaterialApp(
+    await tester.pumpWidget(const MaterialApp(
       home: ManualScreen(),
     ));
 
@@ -49,7 +49,7 @@ void main() {
 
   // test padding widget and padding values
   testWidgets('Test if Padding is present', (WidgetTester tester) async {
-      await tester.pumpWidget(MaterialApp(
+      await tester.pumpWidget(const MaterialApp(
         home: ManualScreen(),
       ));
 
@@ -57,7 +57,7 @@ void main() {
       expect(find.byWidgetPredicate(
         (Widget widget) =>
             widget is Padding &&
-            widget.padding == EdgeInsets.fromLTRB(16.0, 24.0, 16.0, 16.0),
+            widget.padding == const EdgeInsets.fromLTRB(16.0, 24.0, 16.0, 16.0),
       ), findsOneWidget);
   });
 }
