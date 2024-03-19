@@ -47,8 +47,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 width: 30,
                 height: 30,
                 child: Image.asset(isSelected
-                    ? "assets/icons/sun (1).png"
-                    : "assets/icons/moon.png"),
+                    ? "assets/white_icons/sun.png"
+                    : "assets/dark_icons/moon.png"),
               )),
 
           Positioned(
