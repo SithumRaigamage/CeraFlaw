@@ -18,7 +18,7 @@ def RGB(event, x, y, flags, param):
         print(colorsBGR)
 
 
-cv2.namedWindow('CeraFlaw')
+#cv2.namedWindow('CeraFlaw') seems like this line is not needed
 # cv2.setMouseCallback('RGB', RGB)
 cap = cv2.VideoCapture(0)
 
