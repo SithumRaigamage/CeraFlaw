@@ -4,7 +4,7 @@ from ultralytics import YOLO
 from tracker import *
 import cvzone
 
-model = YOLO('best.pt')
+model = YOLO('backend/ObjectCounting/best.pt')
 
 
 def RGB(event, x, y, flags, param):
@@ -17,7 +17,7 @@ cv2.namedWindow('RGB')
 # cv2.setMouseCallback('RGB', RGB)
 cap = cv2.VideoCapture(0)
 
-my_file = open("defect.txt", "r")
+my_file = open("backend/ObjectCounting/defect.txt", "r")
 data = my_file.read()
 class_list = data.split("\n")
 
