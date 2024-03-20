@@ -4,11 +4,15 @@ import cv2
 savedata_dir = "backend//Frames"
 os.makedirs(savedata_dir, exist_ok=True)
 
-def extractFrames(maxFrames=None):
+def extractFrames(videoPath=None, maxFrames=None):
     """
     change maxFrames to None when calling to indefinite run
     """
-    vidCam = cv2.VideoCapture(0)  # initializing videocapture obj
+
+    if videoPath is None or videoPath == "":
+        videoPath = 0  # default camera index
+
+    vidCam = cv2.VideoCapture(videoPath)  # initializing videocapture obj
     currentFrame = 0  # init frame counter
 
     # Video Capture Loop
@@ -37,8 +41,8 @@ def extractFrames(maxFrames=None):
 
 ## testing purposes ##
 def testExtractFrames():
-    extractFrames(maxFrames=20)
+    extractFrames(videoPath="backend//test//test_frame_video.mp4",maxFrames=50)
 
 # Only runs is ran directly
 if __name__ == "__main__":
-    extractFrames()
+    testExtractFrames()
