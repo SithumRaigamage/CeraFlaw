@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'dart:io';
 
 class ProductionHistoryScreen extends StatefulWidget {
   const ProductionHistoryScreen({super.key});
@@ -12,11 +14,28 @@ class ProductionHistoryScreen extends StatefulWidget {
 
 class _ProductionHistoryScreenState extends State<ProductionHistoryScreen> {
   List<dynamic> data = [];
+  String _productContent = "";
   bool isLoading = true; // Track loading state
 
   @override
   void initState() {
     super.initState();
+    loadProduction();
+  }
+
+  Future<void> loadProduction() async {
+    try {
+      final directory = Directory.current;
+      String filePath = '${directory.path}\\history.txt';
+
+      _productContent = await rootBundle.loadString(filePath);
+      setState(() {
+        data = _productContent.split('\n');
+        print(data);
+      }); // Assuming _manualContent is a variable accessible in the same scope
+    } catch (e) {
+      print("Error loading manual: $e");
+    }
   }
 
   @override
@@ -51,13 +70,18 @@ class _ProductionHistoryScreenState extends State<ProductionHistoryScreen> {
                       DataColumn(label: Text("line/crack")),
                       DataColumn(label: Text("Timestamp")),
                     ],
-                    rows: data.map((item) {
-                      return DataRow(cells: [
-                        DataCell(Text(item['id'].toString())),
-                        DataCell(Text(item['detection'])),
-                        DataCell(Text(item['description'])),
-                        DataCell(Text(item['timestamp'])),
-                      ]);
+                    rows: data.map((entry) {
+                      List<String> rowData = entry.split(',');
+                      return DataRow(
+                        cells: <DataCell>[
+                          DataCell(Text(rowData[0])),
+                          DataCell(Text(rowData[1])),
+                          DataCell(Text(rowData[2])),
+                          DataCell(Text(rowData[3])),
+                          DataCell(Text(rowData[4])),
+                          DataCell(Text(rowData[5])),
+                        ],
+                      );
                     }).toList(),
                   ),
                 ),
