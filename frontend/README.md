@@ -1,39 +1,47 @@
-# My Awesome App
+# CeraFlaw: Unveiling the Defects of Ceramic Tiles
 
-Welcome to My Awesome App! This is a brief introduction to what your app does and how to use it.
+Welcome to My CeraFlaw AI Ceramic Tile visual detection Prototyope!
 
-## Getting Started
+## This is a brief introduction to what you must do before starting the StartScreen.
 
-To get started with the app, follow these steps:
+ **Steps to be followed before starting the StartScreen**
 
-1. **Download and Install**: Download the app from the [App Store](link-to-app-store) or [Google Play Store](link-to-play-store) and install it on your device.
+Camera Setup Instructions
+Follow these steps to ensure proper camera setup for the application
 
-2. **Sign Up**: Sign up for an account within the app.
+1. **Connect the Camera :** 
 
-3. **Explore Features**: Explore the various features of the app, such as:
-   - Feature 1
-   - Feature 2
-   - Feature 3
+   Make sure the camera is securely connected to your device.  
+   Ensure the camera is connected to the application using the default settings.
+   If an external camera is being used, ensure it is correctly connected to your device.
 
-## Screenshots
+2. **Check Camera Functionality :**
 
-Here are some screenshots of the app:
+   Verify that the camera is working properly. Open the camera application on your device and check for any errors or malfunctions.
+If the camera is not functioning correctly, please contact product support services for assistance
 
-![Screenshot 1](assets/screenshot1.png)
-*Figure 1: Description of the screenshot*
+3. **Ensure High Megapixel Condition :**
 
-![Screenshot 2](images/screenshot2.png)
-*Figure 2: Description of the screenshot*
+   Confirm that the camera is set to capture images in high megapixel condition. This ensures optimal image quality for the application's purposes.
 
-## Feedback
+4. **Contact Support :**
 
-If you have any feedback or suggestions for improvement, feel free to [contact us](mailto:feedback@example.com).
+   If you encounter any issues with the camera setup or functionality, please reach out to Product's support team for assistance. 
 
-## Contributing
+5. **Troubleshooting :**
 
-If you'd like to contribute to the development of this app, please refer to the [contributing guidelines](CONTRIBUTING.md).
+   If you need further assistance troubleshooting camera issues, refer to the troubleshooting guide provided by the product support team.
 
-## License
+6. **Additional Notes :**
 
-This project is licensed under the [MIT License](LICENSE).
+   Make sure the camera lens is clean and free from any obstructions to avoid blurry or distorted images.
+   Check the camera settings to ensure they are configured according to the application's requirements.
+   Regularly update the camera drivers and software to ensure compatibility with the application.
+
+## CeraFlaw Team Recommended Camera Brands
+   1. Cannon
+   2. Nikon
+
+
+
 
