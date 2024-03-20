@@ -60,35 +60,39 @@ def detectMotion(frame, prevFrame):
     """   
     return motionDetected
 
-## Capture First Frame
-progress, prevFrame = vidCam.read()
+# Only runs is ran directly
+if __name__ == "__main__":
+    ## Capture First Frame
+    progress, prevFrame = vidCam.read()
 
-## Video Capture Loop
-while True:
-    # Video Information
-    progress, frame = vidCam.read()
-    #.read() extracts frame by frame information from a video which is a combination of frames and fps
+    ## Video Capture Loop
+    while True:
+        # Video Information
+        progress, frame = vidCam.read()
+        #.read() extracts frame by frame information from a video which is a combination of frames and fps
 
-    ## For Dev
-    if not progress:
-        print("No frame captured")
-        break
-    ##
-    # Video Stream
-    cv2.imshow("VideoStream", frame)
+        ## For Dev
+        if not progress:
+            print("No frame captured")
+            break
+        ##
+        # Video Stream
+        cv2.imshow("VideoStream", frame)
 
-    if detectMotion(frame, prevFrame):
-        # Saving Frames
-        path = os.path.join(savedata_dir, f"frame{currentFrame}.jpg")
-        cv2.imwrite(path, frame)
-        print(f"Saved frame: {currentFrame}")
-        print(f"Saved frame {currentFrame} to {path}")
-        currentFrame += 1
-    prevFrame = frame.copy()
+        if detectMotion(frame, prevFrame):
+            # Saving Frames
+            path = os.path.join(savedata_dir, f"frame{currentFrame}.jpg")
+            cv2.imwrite(path, frame)
+            print(f"Saved frame: {currentFrame}")
+            print(f"Saved frame {currentFrame} to {path}")
+            currentFrame += 1
+        prevFrame = frame.copy()
 
-    # Manual Exit Option
-    if cv2.waitKey(1) & 0xFF == ord("q"):
-        break
-# end
-vidCam.release()
-cv2.destroyAllWindows()
+        # Manual Exit Option
+        if cv2.waitKey(1) & 0xFF == ord("q"):
+            break
+    # end
+    vidCam.release()
+    cv2.destroyAllWindows()
+
+
