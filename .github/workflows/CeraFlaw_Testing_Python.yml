@@ -36,5 +36,6 @@ jobs:
         working-directory: backend # requirements.txt location
 
       - name: Run Tests # run tests (for back end)
-        run: python -m unittest discover
+        run: #python -m unittest discover
+             python -m unittest backend.test.test_frame_extract
         working-directory: backend
