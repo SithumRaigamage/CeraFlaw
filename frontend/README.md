@@ -42,6 +42,16 @@ If the camera is not functioning correctly, please contact product support servi
    1. Cannon
    2. Nikon
 
+**Desktop and laptop Instructions**
 
+1. **Overheating**
+
+   Desktop
+
+   make sure fans are working
+
+   Laptop
+
+   make sure fans are working and connect the laptop charger to the wall outlet
 
 
