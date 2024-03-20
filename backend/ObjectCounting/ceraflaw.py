@@ -5,7 +5,7 @@ from ultralytics import YOLO
 from tracker import *
 import cvzone
 
-API_URL = 'http://localhost:5000/update_counts'
+# API_URL = 'http://localhost:5000/update_counts'
 model = YOLO('backend/ObjectCounting/best.pt')
 
 # Function to send counts to the Flask API
@@ -50,6 +50,7 @@ while True:
     frame = cv2.resize(frame, (1020, 500))
 
     results = model.predict(frame)
+    
     a = results[0].boxes.data
     px = pd.DataFrame(a).astype("float")
 
@@ -153,12 +154,12 @@ while True:
     }
 
     # Send counts to the Flask API
-    send_counts_to_api(count_data)
+    # send_counts_to_api(count_data)
 
     #Commenting this down so that the screen does not show the result
-    #cvzone.putTextRect(frame, f'edge-chipping/broken-corner:-{edge_chipping_broken_corner_count}', (19, 30), 2, 1)
-    #cvzone.putTextRect(frame, f'surface-defect:-{surface_defect_count}', (19, 70), 2, 1)
-    #cvzone.putTextRect(frame, f'line/crack:-{line_crack_count}', (19, 115), 2, 1)
+    cvzone.putTextRect(frame, f'edge-chipping/broken-corner:-{edge_chipping_broken_corner_count}', (19, 30), 2, 1)
+    cvzone.putTextRect(frame, f'surface-defect:-{surface_defect_count}', (19, 70), 2, 1)
+    cvzone.putTextRect(frame, f'line/crack:-{line_crack_count}', (19, 115), 2, 1)
 
     cv2.imshow("Ceraflaw", frame)
     if cv2.waitKey(1) & 0xFF == 27:
