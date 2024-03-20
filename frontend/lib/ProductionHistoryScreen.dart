@@ -6,38 +6,17 @@ class ProductionHistoryScreen extends StatefulWidget {
   const ProductionHistoryScreen({super.key});
 
   @override
-  _ProductionHistoryScreenState createState() => _ProductionHistoryScreenState();
+  _ProductionHistoryScreenState createState() =>
+      _ProductionHistoryScreenState();
 }
 
 class _ProductionHistoryScreenState extends State<ProductionHistoryScreen> {
   List<dynamic> data = [];
   bool isLoading = true; // Track loading state
 
-  Future<void> getData() async {
-    var url = Uri.parse('http://192.168.1.78/ceraflaw/getdata.php');
-    try {
-      var response = await http.get(url);
-      // print('HTTP Response status code: ${response.statusCode}');
-      // print('HTTP Response body: ${response.body}'); // Debug print
-      
-      if (response.statusCode == 200) {
-        setState(() {
-          data = json.decode(response.body);
-          isLoading = false; // Data is fetched, set loading to false
-        });
-        // print('Data decoded from JSON: $data'); // Debug print
-      } else {
-        print('Failed to load data: ${response.statusCode}');
-      }
-    } catch (e) {
-      print('Error: $e');
-    }
-  }
-
   @override
   void initState() {
     super.initState();
-    getData();
   }
 
   @override
@@ -65,9 +44,11 @@ class _ProductionHistoryScreenState extends State<ProductionHistoryScreen> {
                 child: SingleChildScrollView(
                   child: DataTable(
                     columns: const [
-                      DataColumn(label: Text("ID")),
-                      DataColumn(label: Text("Detection")),
-                      DataColumn(label: Text("Description")),
+                      DataColumn(label: Text("Batch ID")),
+                      DataColumn(label: Text("Tile Id")),
+                      DataColumn(label: Text("Edge-chipping/Broken-corner")),
+                      DataColumn(label: Text("Surface-defects")),
+                      DataColumn(label: Text("line/crack")),
                       DataColumn(label: Text("Timestamp")),
                     ],
                     rows: data.map((item) {
