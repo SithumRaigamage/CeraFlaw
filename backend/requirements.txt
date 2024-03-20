@@ -4,3 +4,4 @@ pandas
 requests
 ultralytics
 cvzone
+flask
