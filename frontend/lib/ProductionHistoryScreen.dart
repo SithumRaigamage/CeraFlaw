@@ -24,19 +24,18 @@ class _ProductionHistoryScreenState extends State<ProductionHistoryScreen> {
   }
 
   Future<void> loadProduction() async {
-    try {
-      final directory = Directory.current;
-      String filePath = '${directory.path}\\history.txt';
-
-      _productContent = await rootBundle.loadString(filePath);
-      setState(() {
-        data = _productContent.split('\n');
-        print(data);
-      }); // Assuming _manualContent is a variable accessible in the same scope
-    } catch (e) {
-      print("Error loading manual: $e");
-    }
+  try {
+    String filePath = 'assets/history.txt';
+    _productContent = await rootBundle.loadString(filePath);
+    setState(() {
+      data = _productContent.split('\n');
+      print(data);
+    });
+  } catch (e) {
+    print("Error loading history: $e");
   }
+}
+
 
   @override
   Widget build(BuildContext context) {

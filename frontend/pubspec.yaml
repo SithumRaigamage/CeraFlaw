@@ -102,6 +102,7 @@ flutter:
   - assets/marbletile.jpeg
   - assets/white_icons/sun.png
   - assets/dark_icons/moon.png
+  - assets/history.txt
 
 
     
