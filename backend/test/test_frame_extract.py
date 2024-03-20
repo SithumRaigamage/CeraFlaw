@@ -7,7 +7,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))) 
 from FrameExtract import testExtractFrames, savedata_dir
 
 class TestFrameExtract(unittest.TestCase):
-    def test_frame_extraction(self):
+    def test_frame_extract(self):
         # save dirct creation
         os.makedirs(savedata_dir, exist_ok=True)
 
