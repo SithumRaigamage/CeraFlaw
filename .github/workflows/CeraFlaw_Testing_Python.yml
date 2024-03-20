@@ -18,6 +18,14 @@ jobs:
       - name: Checkout Source Code
         uses: actions/checkout@v2 # checks for the source codes from our repo
 
+      - name: Cache Dependencies (Python)
+        uses: actions/cache@v2 # cache the dependancies to avoid downloading each time
+        with:
+            path: ~/.cache/pip
+            key: ${{ runner.os }}-pip-${{ hashFiles('backend/requirements.txt') }}
+            restore-keys: |
+                ${{ runner.os }}-pip-
+
       - name: Set up Python
         uses: actions/setup-python@v2 # sets up pythong enviro
         with:
