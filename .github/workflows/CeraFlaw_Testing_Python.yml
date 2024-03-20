@@ -29,7 +29,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2 # sets up pythong enviro
         with:
-          python-version: '3.x' # Python ver. can change
+          python-version: '3.11.x' # Python ver. can change
 
       - name: Install Dependencies # install dependencies
         run: pip install -r requirements.txt
