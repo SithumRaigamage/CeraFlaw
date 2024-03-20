@@ -22,7 +22,7 @@ def extractFrames(videoPath=None, maxFrames=None):
             print("No frame captured")
             break
         
-        # cv2.imshow("VideoStream", frame)  # video stream
+        cv2.imshow("VideoStream", frame)  # video stream
         
         # save frames
         path = os.path.join(savedata_dir, f"frame{currentFrame}.jpg")
