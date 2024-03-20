@@ -11,9 +11,10 @@ from FrameExtractMotion import detectMotion
 
 class TestDetectMotion(unittest.TestCase):
     def test_detectMotion_with_motion(self):
+        dir_path = os.path.dirname(os.path.realpath(__file__))
         # sample frames
-        frame = cv2.imread("frame0.jpg")
-        prevFrame = cv2.imread("frame1.jpg")
+        frame = cv2.imread(os.path.join(dir_path, "frame0.jpg"))
+        prevFrame = cv2.imread(os.path.join(dir_path, "frame1.jpg"))
 
         # test motion detection
         motion_detected = detectMotion(frame, prevFrame)
@@ -22,9 +23,10 @@ class TestDetectMotion(unittest.TestCase):
         self.assertTrue(motion_detected)
 
     def test_detectMotion_without_motion(self):
+        dir_path = os.path.dirname(os.path.realpath(__file__))
         # Create sample frames without motion
-        staticFrame = cv2.imread("frame1.jpg")
-        prevFrame = cv2.imread("frame1.jpg")
+        staticFrame = cv2.imread(os.path.join(dir_path, "frame1.jpg"))
+        prevFrame = cv2.imread(os.path.join(dir_path, "frame1.jpg"))
 
         # Test motion detection
         motion_detected = detectMotion(staticFrame, prevFrame)
