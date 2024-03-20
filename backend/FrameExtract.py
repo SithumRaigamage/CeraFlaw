@@ -1,48 +1,44 @@
-### CeraFlaw - FrameExtract.py
-
 import os
-
-# OpenCv lib
 import cv2
 
-# Capture obj
-vidCam = cv2.VideoCapture(0)
-
-# Variables
-currentFrame = 0
-
-# Savedata directory
 savedata_dir = "backend//Frames"
-#savedata_dir = os.path.expanduser("~\\Desktop\\FrameExtract\\Frames")
 os.makedirs(savedata_dir, exist_ok=True)
 
-## Video Capture Loop
-while True:
-    # Video Information
-    progress, frame = vidCam.read()
-    #.read() extracts frame by frame information from a video which is a combination of frames and fps
+def extractFrames(maxFrames=None):
+    """
+    change maxFrames to None when calling to indefinite run
+    """
+    vidCam = cv2.VideoCapture(0)  # initializing videocapture obj
+    currentFrame = 0  # init frame counter
 
-    ## For Dev
-    if not progress:
-        print("No frame captured")
-        break
-    ##
-    # Video Stream
-    cv2.imshow("VideoStream", frame)
+    # Video Capture Loop
+    while maxFrames is None or currentFrame < maxFrames:
+        progress, frame = vidCam.read()  # read frames from 
+        if not progress:
+            print("No frame captured")
+            break
+        
+        cv2.imshow("VideoStream", frame)  # video stream
+        
+        # save frames
+        path = os.path.join(savedata_dir, f"frame{currentFrame}.jpg")
+        cv2.imwrite(path, frame)
+        # print(f"Saved frame: {currentFrame}")
+        # print(f"Saved frame {currentFrame} to {path}")
+        
+        currentFrame += 1  # frame counting
+        
+        # manual exit (press q)
+        if cv2.waitKey(1) & 0xFF == ord("q"):
+            break
 
-    # Saving Frames
-    path = os.path.join(savedata_dir, f"frame{currentFrame}.jpg")
-    cv2.imwrite(path, frame)
-    ## For Dev
-    print(f"Saved frame: {currentFrame}")
-    print(f"Saved frame {currentFrame} to {path}")
-    ##
-    currentFrame += 1
+    vidCam.release()  # Release the video capture object
+    cv2.destroyAllWindows()  # Close all OpenCV windows
 
-    # Manual Exit Option
-    if cv2.waitKey(1) & 0xFF == ord("q"):
-        break
-    
-# end
-vidCam.release()
-cv2.destroyAllWindows()
+## testing purposes ##
+def testExtractFrames():
+    extractFrames(maxFrames=20)
+
+# Only runs is ran directly
+if __name__ == "__main__":
+    extractFrames()
