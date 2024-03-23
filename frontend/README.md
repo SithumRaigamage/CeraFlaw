@@ -76,3 +76,20 @@ Follow these steps to ensure proper camera setup for the application:
      Check the CPU specifications to ensure it meets or exceeds the minimum requirements. A modern multi-core CPU with a base clock speed of at least 2.0 GHz is recommended for reliable performance.
 
 ## This is a brief introduction to what you must do after starting the StartScreen.
+
+After starting the StartScreen, users need to follow these steps:
+
+1. **Select Tile Size and Input Batch ID:**  
+   Users are required to select the appropriate tile size from the available options and input the Batch ID associated with the tiles they want to inspect. Once done, they can proceed to submit the information.
+
+2. **Redirect to Detection Screen:**  
+   Upon submission, the application will automatically redirect users to the Detection Screen.
+
+   - **Live Camera Feed Popup:**  
+     On the Detection Screen, users will encounter a live camera feed popup. This popup will display real-time footage captured by the connected camera, enabling users to inspect visual defects in ceramic tiles efficiently.
+
+   - **Details of Defects:**  
+     Alongside the live camera feed, users will also find detailed information regarding any defects detected by the CeraFlaw application. This information will be presented in an organized manner, allowing users to quickly identify and address any issues with the inspected tiles.
+
+
+
