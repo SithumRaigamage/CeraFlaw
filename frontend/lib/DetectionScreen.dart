@@ -99,10 +99,10 @@ class _DetectionScreenState extends State<DetectionScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        const Text('Edge chippings / Broken corners:'),
+                        const Text('Edge chippings:'),
                         const SizedBox(width: 10.0),
                         Flexible(
-                          child: Text(countData?['edge_chipping_broken_corner_count'].toString() ?? 'N/A'),
+                          child: Text(countData?['edge_chipping_count'].toString() ?? 'N/A'),
                         ),
                       ],
                     ),

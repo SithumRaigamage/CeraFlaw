@@ -1,0 +1,40 @@
+name: CeraFlaw Backend Testing (Python)
+
+# Events - when to test (- main branch)
+on:
+  push: # when commiting
+    branches:
+      - main
+  pull_request: # when pulling
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Python Test Run
+    runs-on: windows-latest # runtime enviroment
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v2 # checks for the source codes from our repo
+
+      - name: Cache Dependencies (Python)
+        uses: actions/cache@v2 # cache the dependancies to avoid downloading each time
+        with:
+            path: ~/.cache/pip
+            key: ${{ runner.os }}-pip-${{ hashFiles('backend/requirements.txt') }}
+            restore-keys: |
+                ${{ runner.os }}-pip-
+
+      - name: Set up Python
+        uses: actions/setup-python@v2 # sets up pythong enviro
+        with:
+          python-version: '3.11.x' # Python ver. can change
+
+      - name: Install Dependencies # install dependencies
+        run: pip install -r requirements.txt
+        working-directory: backend # requirements.txt location
+
+      - name: Run Tests # run tests (for back end)
+        run: python -m unittest discover
+        working-directory: backend
