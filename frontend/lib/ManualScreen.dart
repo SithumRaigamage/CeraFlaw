@@ -1,4 +1,3 @@
-
 import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
@@ -49,7 +48,8 @@ class _ManualScreenState extends State<ManualScreen> {
 
   Future<File> get _localFile async {
     final directory = Directory.current;
-    String filePath = '${directory.path}//README.md'; // Change the file name to README.md
+    String filePath =
+        '${directory.path}//README.md'; // Change the file name to README.md
     return File(filePath);
   }
 
@@ -60,13 +60,19 @@ class _ManualScreenState extends State<ManualScreen> {
         title: const Text('Manual'),
       ),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(16.0, 24.0, 16.0, 16.0), // Adjust margin top here
+        padding: const EdgeInsets.fromLTRB(
+            16.0, 24.0, 16.0, 16.0), // Adjust margin top here
         child: Center(
           child: SingleChildScrollView(
             child: _manualContent.isNotEmpty
+
+                // Add your imag
+
                 ? MarkdownBody(data: _manualContent)
-                : const CircularProgressIndicator(), // Show loading indicator while content is loading
-          ),
+                : const CircularProgressIndicator(),
+
+            // Show loading indicator while content is loading
+          ), // Show loading indicator while content is loading
         ),
       ),
     );

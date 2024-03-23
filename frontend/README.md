@@ -90,6 +90,8 @@ After starting the StartScreen, users need to follow these steps:
 
    - **Details of Defects:**  
      Alongside the live camera feed, users will also find detailed information regarding any defects detected by the CeraFlaw application. This information will be presented in an organized manner, allowing users to quickly identify and address any issues with the inspected tiles.
-
+   
+   - **Back to StartScreen button:**                                                                 
+     The "Back to Main Menu" button is a user interface element designed to facilitate easy navigation back to the Start screen. When users interact with this button, they are redirected to the startscreen where they can Batch ID and the tiles they want to inspect.
 
 
