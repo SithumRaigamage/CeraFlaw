@@ -13,6 +13,8 @@ model = YOLO('backend/ObjectCounting/best.pt')
 def send_counts_to_api(count_data):
     threading.Thread(target=requests.post, args=(API_URL,), kwargs={'json': count_data}).start()
 
+
+
 cap = cv2.VideoCapture(0)
 
 my_file = open("backend/ObjectCounting/defect.txt", "r")
@@ -44,9 +46,9 @@ while True:
     if not ret:
         break
 
-    count += 1
-    if count % 3 != 0: # Process every 3rd frame
-        continue
+    #count += 1
+    #if count % 3 != 0: # Process every 3rd frame
+        #continue
 
     frame = cv2.resize(frame, (1020, 500))
 
