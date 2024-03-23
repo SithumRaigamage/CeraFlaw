@@ -94,4 +94,22 @@ After starting the StartScreen, users need to follow these steps:
    - **Back to StartScreen button:**                                                                 
      The "Back to Main Menu" button is a user interface element designed to facilitate easy navigation back to the Start screen. When users interact with this button, they are redirected to the startscreen where they can Batch ID and the tiles they want to inspect.
 
+## This is a brief introduction to how to use after starting the NoteScreen.
 
+After starting the NoteScreen,Follow these steps,
+
+1. **Select Title field and Input a title:**                                                    
+   Click on the message field and type in the desired text  what will be visualized as the title.
+   It can be used to identify decriptive in short. 
+  
+
+2. **Select Meassage field  and Input a message:**                                                   
+   Then,click the message field and enter a text.It allows users to input detailed information, communicate ideas, or provide instructions.
+3. **Press add button to add text to the notescreen:**                                          
+   Click the "Add" button to append items or elements to the interface.It allows to add notes respectively.
+
+
+4. **Press remove button to remove text from the notescreen:**                                   
+   Users can remove specific notes or items by using remove button. Click the "Remove" button to delete the corresponding entry or component.
+
+## This is a brief introduction to how to use after starting the ProductionHistoryScreen.
