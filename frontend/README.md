@@ -112,4 +112,21 @@ After starting the NoteScreen,Follow these steps,
 4. **Press remove button to remove text from the notescreen:**                                   
    Users can remove specific notes or items by using remove button. Click the "Remove" button to delete the corresponding entry or component.
 
-## This is a brief introduction to how to use after starting the ProductionHistoryScreen.
+## This is a brief introduction about ProductionHistoryScreen.
+   The page serves to display historical production data, allowing users to review past manufacturing activities.Users can utilize this interface to monitor production quality, identify trends in defects, and track production timelines.
+
+   - **Batch Id:**                                                                                   
+   Batch ID refers to a unique identifier assigned to a specific batch of products manufactured during a particular production run.It helps track and manage batches for quality control. 
+   - **Tile Id:**                                                                                    
+   Tile ID represents a unique identifier assigned to a specific tile or unit within the production process.
+   - **Edge chiping/Broken corner:**                                                                 
+   Edge chipping refers to the presence of chips or fractures along the edges of tiles or products. This field indicates the extent or severity of edge chipping observed during production.
+   - **Surface defect:**                                                                            
+   Surface defect denotes any irregularities or imperfections found on the surface of tiles or products.It includes scratches that appers top of the tile.
+   - **Line/Crack:**                                                                                 
+   Line crack indicates the presence of cracks or fissures running along the surface or through the body of tiles or products. This field records the occurrence and severity of line cracks detected during production.
+   - **Timestamp:**                                                                                 
+   Timestamp records the date and time when data related to the production history was logged or recorded. It provides chronological information for tracking production events and activities.
+
+
+
