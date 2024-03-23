@@ -38,3 +38,15 @@ jobs:
       - name: Run Tests # run tests (for back end)
         run: python -m unittest discover
         working-directory: backend
+
+      # # Deployment (Commented out for Future use)
+      # # Uncomment and modify steps if needed
+
+      # - name: Build and Package CeraFlaw
+      #   run: python build.py
+      #   working-directory: backend
+
+      # - name: Deploy 
+      #   run: |
+      #     echo "Deployment"
+      #     # Deployment Commands

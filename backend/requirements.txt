@@ -4,3 +4,5 @@ pandas
 requests
 ultralytics
 cvzone
+flask
+flask-cors

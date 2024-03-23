@@ -1,44 +1,38 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
+import 'package:flutter/services.dart';
 
 class ProductionHistoryScreen extends StatefulWidget {
   const ProductionHistoryScreen({super.key});
 
   @override
-  _ProductionHistoryScreenState createState() => _ProductionHistoryScreenState();
+  _ProductionHistoryScreenState createState() =>
+      _ProductionHistoryScreenState();
 }
 
 class _ProductionHistoryScreenState extends State<ProductionHistoryScreen> {
   List<dynamic> data = [];
+  String _productContent = "";
   bool isLoading = true; // Track loading state
-
-  Future<void> getData() async {
-    var url = Uri.parse('http://192.168.1.78/ceraflaw/getdata.php');
-    try {
-      var response = await http.get(url);
-      // print('HTTP Response status code: ${response.statusCode}');
-      // print('HTTP Response body: ${response.body}'); // Debug print
-      
-      if (response.statusCode == 200) {
-        setState(() {
-          data = json.decode(response.body);
-          isLoading = false; // Data is fetched, set loading to false
-        });
-        // print('Data decoded from JSON: $data'); // Debug print
-      } else {
-        print('Failed to load data: ${response.statusCode}');
-      }
-    } catch (e) {
-      print('Error: $e');
-    }
-  }
 
   @override
   void initState() {
     super.initState();
-    getData();
+    loadProduction();
   }
+
+  Future<void> loadProduction() async {
+  try {
+    String filePath = 'assets/history.txt';
+    _productContent = await rootBundle.loadString(filePath);
+    setState(() {
+      data = _productContent.split('\n');
+      print(data);
+    });
+  } catch (e) {
+    print("Error loading history: $e");
+  }
+}
+
 
   @override
   Widget build(BuildContext context) {
@@ -65,18 +59,25 @@ class _ProductionHistoryScreenState extends State<ProductionHistoryScreen> {
                 child: SingleChildScrollView(
                   child: DataTable(
                     columns: const [
-                      DataColumn(label: Text("ID")),
-                      DataColumn(label: Text("Detection")),
-                      DataColumn(label: Text("Description")),
+                      DataColumn(label: Text("Batch ID")),
+                      DataColumn(label: Text("Tile Id")),
+                      DataColumn(label: Text("Edge-chipping/Broken-corner")),
+                      DataColumn(label: Text("Surface-defects")),
+                      DataColumn(label: Text("line/crack")),
                       DataColumn(label: Text("Timestamp")),
                     ],
-                    rows: data.map((item) {
-                      return DataRow(cells: [
-                        DataCell(Text(item['id'].toString())),
-                        DataCell(Text(item['detection'])),
-                        DataCell(Text(item['description'])),
-                        DataCell(Text(item['timestamp'])),
-                      ]);
+                    rows: data.map((entry) {
+                      List<String> rowData = entry.split(',');
+                      return DataRow(
+                        cells: <DataCell>[
+                          DataCell(Text(rowData[0])),
+                          DataCell(Text(rowData[1])),
+                          DataCell(Text(rowData[2])),
+                          DataCell(Text(rowData[3])),
+                          DataCell(Text(rowData[4])),
+                          DataCell(Text(rowData[5])),
+                        ],
+                      );
                     }).toList(),
                   ),
                 ),

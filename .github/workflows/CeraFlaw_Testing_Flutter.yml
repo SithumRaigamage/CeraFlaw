@@ -39,3 +39,15 @@ jobs:
       - name: Flutter Test Run # run tests (for front end)
         run: flutter test
         working-directory: frontend
+
+      # # Deployment (Commented out for Future use)
+      # # Uncomment and modify steps if needed
+
+      # - name: Build and Package CeraFlaw
+      #   run: flutter build windows
+      #   working-directory: frontend
+
+      # - name: Deploy 
+      #   run: |
+      #     echo "Deployment"
+      #     # Deployment Commands
