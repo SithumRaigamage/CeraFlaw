@@ -4,6 +4,7 @@ import pandas as pd
 import requests
 from ultralytics import YOLO
 from tracker import *
+import threading
 
 
 class ObjectCounting:
@@ -33,7 +34,8 @@ class ObjectCounting:
 
     def send_counts_to_api(self, count_data):
         # Send count data to the specified API URL
-        requests.post(self.api_url, json=count_data)
+        # requests.post(self.api_url, json=count_data)
+        threading.Thread(target=requests.post, args=(self.api_url,), kwargs={'json': count_data}).start()
 
     def process_frame(self, frame):
         # Process each frame for object detection and counting
@@ -180,7 +182,7 @@ class ObjectCounting:
 
 
 # Initialize the object counter with specified parameters
-object_counter = ObjectCounting('backend\sbest.pt', 'http://localhost:5000/update_counts', "backend/ObjectCounting/defect.txt")
+object_counter = ObjectCounting('backend/ObjectCounting/model_n.pt', 'http://localhost:5000/update_counts', "backend/ObjectCounting/defect.txt")
 
 # Start the object counting process
 object_counter.run()
