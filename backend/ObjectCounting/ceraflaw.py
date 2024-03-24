@@ -34,7 +34,6 @@ class ObjectCounting:
 
     def send_counts_to_api(self, count_data):
         # Send count data to the specified API URL
-        # requests.post(self.api_url, json=count_data)
         threading.Thread(target=requests.post, args=(self.api_url,), kwargs={'json': count_data}).start()
 
     def process_frame(self, frame):
