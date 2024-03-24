@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -44,6 +45,23 @@ class _DetectionScreenState extends State<DetectionScreen> {
       }
     } catch (e) {
       print('Error: $e');
+    }
+  }
+
+  Future<void> saveCountDataToJson(String batchIdForHistory,String tileIdForHistory) async {
+    try {
+      final directory = Directory.current;
+      final file = File('${directory.path}/production_history.json');
+        await file.writeAsString(json.encode({
+          'batchId': batchIdForHistory,
+          'tileId': tileIdForHistory,
+          'edge_chipping_count': countData?['edge_chipping_count'],
+          'surface_defect_count': countData?['surface_defect_count'],
+          'line_crack_count': countData?['line_crack_count']
+          }));
+      print('Count data saved to file');
+    } catch (e) {
+      print('Error saving count data to file: $e');
     }
   }
 
@@ -149,6 +167,7 @@ class _DetectionScreenState extends State<DetectionScreen> {
                               );
                               if (response.statusCode == 200) {
                                 print('Python script terminated successfully');
+                                await saveCountDataToJson(widget.batchId,widget.tileId);
                               } else {
                                 print(
                                     'Failed to terminate Python script: ${response.statusCode}');

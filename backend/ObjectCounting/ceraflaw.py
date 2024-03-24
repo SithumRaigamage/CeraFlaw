@@ -7,7 +7,7 @@ import cvzone
 import threading
 
 API_URL = 'http://localhost:5000/update_counts'
-model = YOLO('backend\sbest.pt')
+model = YOLO('backend/sbest.pt')
 
 # Function to send counts to the Flask API
 def send_counts_to_api(count_data):
