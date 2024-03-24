@@ -1,13 +1,3 @@
 Batch1,Tile1,10,5,3,2024-03-20 08:00:00
 
-## This is a brief introduction how to use after starting the NoteScreen.
-
-After starting the NoteScreen,Follow these steps
-
-1. **Select Title field and Input a title:**
-
-1. **Select Meassage field  and Input a message:**  
-
-1. **Select Tile Size and Input Batch ID:**  
-
-1. **Select Tile Size and Input Batch ID:**  
+  

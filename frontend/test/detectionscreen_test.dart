@@ -7,7 +7,7 @@ void main() {
   group('DetectionScreen Widget Tests', () {
     testWidgets('Test Appbar title', (WidgetTester tester) async {
       // build the widget
-      await tester.pumpWidget(MaterialApp(
+      await tester.pumpWidget(const MaterialApp(
         home: DetectionScreen(batchId: '123', tileId: '456'),
       ));
 
@@ -17,7 +17,7 @@ void main() {
 
     testWidgets('Test batch ID and tile ID', (WidgetTester tester) async {
       // build the widget
-      await tester.pumpWidget(MaterialApp(
+      await tester.pumpWidget(const MaterialApp(
         home: DetectionScreen(batchId: '123', tileId: '456'),
       ));
 
@@ -30,7 +30,7 @@ void main() {
 
     testWidgets('Test count data', (WidgetTester tester) async {
       // build the widget
-      await tester.pumpWidget(MaterialApp(
+      await tester.pumpWidget(const MaterialApp(
         home: DetectionScreen(batchId: '123', tileId: '456'),
       ));
 
@@ -45,7 +45,7 @@ void main() {
 
     testWidgets('Test "Back to Main Menu" button', (WidgetTester tester) async {
       // build the widget
-      await tester.pumpWidget(MaterialApp(
+      await tester.pumpWidget(const MaterialApp(
         home: DetectionScreen(batchId: '123', tileId: '456'),
       ));
 

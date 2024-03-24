@@ -5,7 +5,7 @@ import 'package:ceraflaw/ProductionHistoryScreen.dart';
 void main() {
   testWidgets('Testing Appbar title', (WidgetTester tester) async {
     // build widget
-    await tester.pumpWidget(MaterialApp(
+    await tester.pumpWidget(const MaterialApp(
       home: ProductionHistoryScreen(),
     ));
 
@@ -14,7 +14,7 @@ void main() {
   });
 
   testWidgets('Testing if Scaffold is present', (WidgetTester tester) async {
-    await tester.pumpWidget(MaterialApp(
+    await tester.pumpWidget(const MaterialApp(
       home: ProductionHistoryScreen(),
     ));
 
@@ -23,7 +23,7 @@ void main() {
   });
 
   testWidgets('Test if DataTable is present', (WidgetTester tester) async {
-    await tester.pumpWidget(MaterialApp(
+    await tester.pumpWidget(const MaterialApp(
       home: ProductionHistoryScreen(),
     ));
 
@@ -32,7 +32,7 @@ void main() {
   });
 
   testWidgets('Test if CircularProgressIndicator is not present', (WidgetTester tester) async {
-    await tester.pumpWidget(MaterialApp(
+    await tester.pumpWidget(const MaterialApp(
       home: ProductionHistoryScreen(),
     ));
 
