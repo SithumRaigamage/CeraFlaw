@@ -127,7 +127,7 @@ void handleButtonClick(String selectedTileId) async {
     try {
       // Attempt to start the script
       var response = await http.post(
-        Uri.parse('http://localhost:5000/'), // Adjusted to match the Flask API route
+        Uri.parse('http://localhost:5000/'), 
         body: {'start': 'true'},
       );
 

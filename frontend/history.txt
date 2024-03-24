@@ -1,4 +1,4 @@
-Batch1,Tile1,10,5,3,2024-03-20 08:00:00
+Batch1,T001,10,5,3,2024-03-20 08:00:00
 
 ## This is a brief introduction how to use after starting the NoteScreen.
 

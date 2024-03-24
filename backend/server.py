@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app) # This will enable CORS for all routes
 
 # Configure logging (optional, adjust as needed)
-logging.basicConfig(filename='myapp.log', level=logging.DEBUG)
+logging.basicConfig(filename='ceraflaw.log', level=logging.DEBUG)
 
 # Define the base URL for the API
 API_BASE_URL = 'http://localhost:5000' # Adjust if using a different port
