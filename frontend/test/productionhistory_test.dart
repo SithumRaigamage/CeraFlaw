@@ -22,21 +22,32 @@ void main() {
     expect(find.byType(Scaffold), findsOneWidget);
   });
 
-  testWidgets('Test if DataTable is present', (WidgetTester tester) async {
+  // data table removed
+
+  // testWidgets('Test if DataTable is present', (WidgetTester tester) async {
+  //   await tester.pumpWidget(const MaterialApp(
+  //     home: ProductionHistoryScreen(),
+  //   ));
+
+  //   // checking if DataTable is present
+  //   expect(find.byType(DataTable), findsOneWidget);
+  // });
+  testWidgets('Test if DataTable is not present', (WidgetTester tester) async {
     await tester.pumpWidget(const MaterialApp(
       home: ProductionHistoryScreen(),
     ));
 
-    // checking if DataTable is present
-    expect(find.byType(DataTable), findsOneWidget);
+    // checking if DataTable is not present
+    expect(find.byType(DataTable), findsNothing);
   });
+  
 
-  testWidgets('Test if CircularProgressIndicator is not present', (WidgetTester tester) async {
+  testWidgets('Test if CircularProgressIndicator is present', (WidgetTester tester) async {
     await tester.pumpWidget(const MaterialApp(
       home: ProductionHistoryScreen(),
     ));
 
-    // checking if CircularProgressIndicator is not present
-    expect(find.byType(CircularProgressIndicator), findsNothing);
+    // checking if CircularProgressIndicator is present
+    expect(find.byType(CircularProgressIndicator), findsOneWidget);
   });
 }

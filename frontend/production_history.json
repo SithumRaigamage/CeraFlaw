@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 [{"batchId":"b009","tileId":"T001","edge_chipping_count":0,"surface_defect_count":0,"line_crack_count":0},{"batchId":"b005","tileId":"T001","edge_chipping_count":0,"surface_defect_count":0,"line_crack_count":0},{"batchId":"B001","tileId":"T001","edge_chipping_count":0,"surface_defect_count":0,"line_crack_count":0}]
+=======
+[{"batchId":"b009","tileId":"T001","edge_chipping_count":0,"surface_defect_count":0,"line_crack_count":0},{"batchId":"b005","tileId":"T001","edge_chipping_count":0,"surface_defect_count":0,"line_crack_count":0},{"batchId":"123","tileId":"T001","edge_chipping_count":3,"surface_defect_count":0,"line_crack_count":0},{"batchId":"12334","tileId":"T001","edge_chipping_count":13,"surface_defect_count":9,"line_crack_count":0}]
+>>>>>>> 9d8ff5f804dc88bd49c7f8be003e92e9b95b9a9c
