@@ -23,7 +23,8 @@ def run_script():
         if request.method == 'POST' and request.form.get('start'):
             if script_process is None or script_process.poll() is not None:
                 #script_process = subprocess.Popen(['python', 'backend/predict.py'])
-                script_process = subprocess.Popen([sys.executable, 'backend/ObjectCounting/ceraflaw.py'])
+                # script_process = subprocess.Popen([sys.executable, 'backend/ObjectCounting/ceraflaw.py'])
+                script_process = subprocess.Popen([sys.executable, 'backend/ObjectCounting/ceraflawOOP.py'])
                 logging.info('Script started successfully')
                 return 'Script started successfully', 200
             else:

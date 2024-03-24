@@ -35,7 +35,7 @@ void main() {
       ));
 
       // cheaking if all datafields has 'N/A'
-      expect(find.text('Edge chippings / Broken corners:'), findsOneWidget);
+      expect(find.text('Edge chippings:'), findsOneWidget);
       expect(find.text('N/A'), findsNWidgets(3)); // three count datafields
       expect(find.text('Surface Defects:'), findsOneWidget);
       expect(find.text('N/A'), findsNWidgets(3));
