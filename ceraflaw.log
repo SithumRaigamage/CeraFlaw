@@ -1114,3 +1114,89 @@ INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:06:08] "POST /update_counts HTTP/1.1
 INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:06:09] "GET /get_counts HTTP/1.1" 200 -
 INFO:root:Script terminated successfully
 INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:06:09] "GET /?stop=true HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 853-666-439
+INFO:root:Script started successfully
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:40] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:40] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:41] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:42] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:43] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:44] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:45] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:46] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:47] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:48] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:49] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:50] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:51] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:52] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:53] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:54] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:55] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:56] "GET /get_counts HTTP/1.1" 200 -
+INFO:root:Script terminated successfully
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:26:56] "GET /?stop=true HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 853-666-439
+INFO:root:Script started successfully
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:18] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:18] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:19] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:20] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:21] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:22] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:23] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:24] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:25] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:26] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:27] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:28] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:29] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:29] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:30] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:31] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:32] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:32] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:33] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:34] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:34] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:35] "GET /get_counts HTTP/1.1" 200 -
+INFO:root:Script terminated successfully
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:35] "GET /?stop=true HTTP/1.1" 200 -
+INFO:root:Script started successfully
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:52] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:52] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:53] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:54] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:55] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:56] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:57] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:58] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:30:59] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:31:00] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:31:01] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:31:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:31:02] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:31:03] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:31:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:31:04] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:31:05] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:31:06] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:31:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:31:07] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:31:08] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:31:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:root:Script terminated successfully
+INFO:werkzeug:127.0.0.1 - - [24/Mar/2024 19:31:08] "GET /?stop=true HTTP/1.1" 200 -

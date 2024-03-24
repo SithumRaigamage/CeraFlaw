@@ -48,22 +48,62 @@ class _DetectionScreenState extends State<DetectionScreen> {
     }
   }
 
-  Future<void> saveCountDataToJson(String batchIdForHistory,String tileIdForHistory) async {
-    try {
-      final directory = Directory.current;
-      final file = File('${directory.path}/production_history.json');
-        await file.writeAsString(json.encode({
-          'batchId': batchIdForHistory,
-          'tileId': tileIdForHistory,
-          'edge_chipping_count': countData?['edge_chipping_count'],
-          'surface_defect_count': countData?['surface_defect_count'],
-          'line_crack_count': countData?['line_crack_count']
-          }));
-      print('Count data saved to file');
-    } catch (e) {
-      print('Error saving count data to file: $e');
+  Future<void> saveCountDataToJson(String batchIdForHistory, String tileIdForHistory) async {
+  try {
+    final directory = Directory.current;
+    final file = File('${directory.path}/production_history.json');
+
+    // Check if the file exists
+    if (await file.exists()) {
+      // Read existing data if the file exists
+      String existingData = await file.readAsString();
+
+      // Check if the existing data is a list
+      List<dynamic>? existingList;
+      try {
+        existingList = json.decode(existingData) as List<dynamic>;
+      } catch (e) {
+        print('Error: Existing data is not a valid JSON list: $e');
+        // Handle potential errors here (e.g., create a new file or log a warning)
+      }
+
+      // Create a new map with new data
+      Map<String, dynamic> newData = {
+        'batchId': batchIdForHistory,
+        'tileId': tileIdForHistory,
+        'edge_chipping_count': countData?['edge_chipping_count'],
+        'surface_defect_count': countData?['surface_defect_count'],
+        'line_crack_count': countData?['line_crack_count'],
+      };
+
+      // If existing list is valid, append new data
+      if (existingList != null) {
+        existingList.add(newData);
+        await file.writeAsString(json.encode(existingList));
+        print('Count data appended to existing list');
+      } else {
+        // If existing data is not a list, create a new list with the new data
+        List<dynamic> newList = [newData];
+        await file.writeAsString(json.encode(newList));
+        print('Count data saved to new file (as a list)');
+      }
+    } else {
+      // If the file doesn't exist, create a new list with the new data
+      List<dynamic> newList = [{
+        'batchId': batchIdForHistory,
+        'tileId': tileIdForHistory,
+        'edge_chipping_count': countData?['edge_chipping_count'],
+        'surface_defect_count': countData?['surface_defect_count'],
+        'line_crack_count': countData?['line_crack_count'],
+      }];
+      await file.writeAsString(json.encode(newList));
+      print('Count data saved to new file (as a list)');
     }
+  } catch (e) {
+    print('Error saving count data to file: $e');
   }
+}
+
 
   @override
   Widget build(BuildContext context) {
