@@ -1,7 +1,13 @@
-Pull from the main branch and continue the work 
+Follow these steps before running the application
 
-All the files have been organised 
+Clear Flutter Cache: Sometimes, cached data can cause issues. Run the following command in your terminal or command prompt to clear Flutter's cache:
 
-To test the backend code you may run only the main.py file , An image has been added for the testing of the backend code 
+flutter clean
 
-run dart pub get to update all the dependencies
+Reinstall Dependencies: After clearing the cache, reinstall the project dependencies by running:
+
+flutter pub get
+
+Run Flutter Doctor: Check if there are any issues with your Flutter installation or project configuration by running:
+
+flutter doctor
