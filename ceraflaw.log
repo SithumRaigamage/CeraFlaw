@@ -6670,3 +6670,1348 @@ INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 853-666-439
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\concurrent\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\idlelib\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\lib2to3\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\test\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\turtledemo\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\wsgiref\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\xmlrpc\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\__phello__\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\absl\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\cpuinfo\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\cvzone\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\Cython\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\deap\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\functorch\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\gdown\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\gitdb\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\jedi\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\lxml\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\material\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\materialx\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\matplotlib_inline\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\mpl_toolkits\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\mpmath\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\paginate\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pydevd_plugins\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pytest_cov\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pyximport\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\scipy\\conftest.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\scipy\\version.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\shapely\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\smmap\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\supervision\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorboard_data_server\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\thop\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torchgen\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torchvision\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tpot\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tzdata\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:werkzeug: * Detected change in 'd:\\CeraFlaw\\backend\\ObjectCounting\\ceraflaw.py', reloading
+INFO:werkzeug: * Detected change in 'd:\\CeraFlaw\\backend\\ObjectCounting\\tracker.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\cv2\\mat_wrapper\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\functional.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_tensor.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:root:Script started successfully
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:23] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:23] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:24] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\cv2\\config.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\cv2\\config-3.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:25] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:26] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:27] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:28] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:29] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\cuda\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\ultralytics\\data\\base.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\ultralytics\\data\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:30] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:31] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\library.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_prims\\rng_prims.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_prims\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_custom_op\\impl.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_prims\\debug_prims.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_meta_registrations.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pyparsing\\core.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:32] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torchvision\\_meta_registrations.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_library\\abstract_impl.py', reloading
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:33] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_dynamo\\config.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_functorch\\config.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:34] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_inductor\\test_operators.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_inductor\\config.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:36] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:36] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:37] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:38] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:39] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:40] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\cpuinfo\\cpuinfo.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:41] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:42] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:43] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:44] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:44] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:45] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:46] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:47] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:48] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:49] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:50] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:51] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:52] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:53] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:54] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:55] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:56] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:57] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:58] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:59] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:02:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:00] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:01] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:02] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:03] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:04] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:05] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:06] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:07] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:08] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:09] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:10] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:11] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:12] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:13] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:14] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:15] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:16] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:17] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:18] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:19] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:20] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:21] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:22] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:23] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:23] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:23] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:23] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:23] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:23] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:23] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:23] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:23] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:23] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:23] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:24] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:24] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:24] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:24] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:24] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:24] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:24] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:24] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:24] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:24] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:25] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:25] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:25] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:25] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:25] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:25] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:25] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:25] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:25] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:25] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:26] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:26] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:26] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:26] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:26] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:26] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:26] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:26] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:26] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:26] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:26] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:27] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:27] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:27] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:27] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:27] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:27] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:27] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:27] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:27] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:27] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:27] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:28] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:28] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:28] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:28] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:28] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:28] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:28] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:28] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:28] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:28] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:28] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:29] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:29] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:29] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:29] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:29] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:29] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:29] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:29] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:29] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:29] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:29] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:30] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:30] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:30] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:30] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:30] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:30] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:30] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:30] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:30] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:30] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:31] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:31] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:31] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:31] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:31] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:31] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:31] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:31] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:31] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:31] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:31] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:32] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:32] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:32] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:32] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:32] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:32] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:32] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:32] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:32] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:32] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:33] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:33] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:33] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:33] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:33] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:33] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:33] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:33] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:33] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:33] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:33] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:33] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:34] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:34] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:34] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:34] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:34] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:34] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:34] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:34] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:34] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:34] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:35] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:35] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:35] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:35] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:35] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:35] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:35] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:35] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:35] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:35] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:35] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:36] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:36] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:36] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:36] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:36] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:36] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:36] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:36] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:36] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:36] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:36] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:37] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:37] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:37] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:37] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:37] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:37] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:37] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:37] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:37] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:37] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:38] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:38] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:38] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:38] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:38] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:38] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:38] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:38] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:38] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:38] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:38] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:39] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:39] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:39] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:39] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:39] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:39] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:39] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:39] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:39] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:39] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:39] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:40] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:40] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:40] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:40] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:40] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:40] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:40] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:40] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:40] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:40] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:40] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:41] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:41] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:41] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:41] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:41] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:41] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:41] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:41] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:41] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:41] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:42] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:42] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:42] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:42] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:42] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:42] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:42] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:42] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:43] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Apr/2024 23:03:43] "[31m[1mGET /?stop=true HTTP/1.1[0m" 400 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:root:Script started successfully
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:27] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:27] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\cv2\\config.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\cv2\\config-3.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:28] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:29] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:30] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:31] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\cuda\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:32] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\library.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_prims\\rng_prims.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_prims\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:33] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\pyparsing\\core.py', reloading
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:34] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:35] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_dynamo\\config.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\_functorch\\config.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torch\\fx\\experimental\\_config.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:36] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\torchvision\\models\\densenet.py', reloading
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:37] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:38] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:39] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:40] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:41] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\cpuinfo\\cpuinfo.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\multiprocessing\\process.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\acer\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\multiprocessing\\spawn.py', reloading
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:42] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 488-388-089
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:43] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:44] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:45] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:46] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:47] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:48] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:49] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:50] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:51] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:52] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:53] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:54] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:55] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:55] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:56] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:56] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:57] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:57] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:58] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:58] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:59] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:49:59] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:00] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:00] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:01] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:01] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:02] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:02] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:03] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:03] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:04] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:04] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:05] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:05] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:06] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:06] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:07] "[31m[1mGET /?stop=true HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:07] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:07] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:08] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:09] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:10] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:11] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:50:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:root:Script started successfully
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:01] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:01] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:02] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:03] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:04] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:05] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:06] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:07] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:08] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:09] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:10] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:11] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:12] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:12] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:13] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:13] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:14] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:14] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:15] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:15] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:16] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:16] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:17] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:17] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:18] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:18] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:19] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:19] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:20] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:20] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:21] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:21] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:22] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:22] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:23] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:23] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:23] "GET /get_counts HTTP/1.1" 200 -
+INFO:root:Script terminated successfully
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:23] "GET /?stop=true HTTP/1.1" 200 -
+INFO:root:Script started successfully
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:34] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:34] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:35] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:36] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:37] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:38] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:39] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:40] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:41] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:42] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:43] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:44] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:44] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:44] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:45] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:45] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:46] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:46] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:47] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:47] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:48] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:48] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:49] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:49] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:50] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:50] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:51] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:51] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:52] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:52] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:53] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:53] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:54] "GET /get_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:54] "POST /update_counts HTTP/1.1" 200 -
+INFO:root:Script terminated successfully
+INFO:werkzeug:127.0.0.1 - - [03/Apr/2024 21:52:54] "GET /?stop=true HTTP/1.1" 200 -
